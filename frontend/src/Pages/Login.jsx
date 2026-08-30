@@ -13,33 +13,60 @@ const Login = () => {
     e.preventDefault();
 
     axios
-      .get("http://localhost:3000/users")
-      .then((response) => {
-        const users = response.data;
+      .all([
+        axios.get("http://localhost:3000/users"),
+        axios.get("http://localhost:3000/admin"),
+      ])
+      .then(
+        axios.spread((usersResponse, adminsResponse) => {
+          const users = usersResponse.data;
+          const admins = adminsResponse.data;
 
-        const user = users.find(
-          (item) =>
-            item.email === email &&
-            item.password === password
-        );
-
-        if (user) {
-          console.log("Logged in user:", user);
-
-          // Store logged-in user
-          localStorage.setItem(
-            "loggedInUser",
-            JSON.stringify(user)
+          const user = users.find(
+            (item) =>
+              item.email === email &&
+              item.password === password
           );
 
-          alert("Login successful!");
+          const admin = admins.find(
+            (item) =>
+              item.email === email &&
+              item.password === password
+          );
 
-          // Navigate to home
-          navigate("/home");
-        } else {
-          alert("Invalid email or password");
-        }
-      })
+          if (admin) {
+            console.log("Logged in admin:", admin);
+
+            // Store logged-in admin, clear any user session
+            localStorage.removeItem("loggedInUser");
+            localStorage.setItem(
+              "loggedInAdmin",
+              JSON.stringify(admin)
+            );
+
+            alert("Admin login successful!");
+
+            // Stay on the admin dashboard
+            navigate("/admin/dashboard");
+          } else if (user) {
+            console.log("Logged in user:", user);
+
+            // Store logged-in user, clear any admin session
+            localStorage.removeItem("loggedInAdmin");
+            localStorage.setItem(
+              "loggedInUser",
+              JSON.stringify(user)
+            );
+
+            alert("Login successful!");
+
+            // Navigate to home
+            navigate("/home");
+          } else {
+            alert("Invalid email or password");
+          }
+        })
+      )
       .catch((error) => {
         console.log("Login error:", error);
         alert("Unable to login. Please try again.");

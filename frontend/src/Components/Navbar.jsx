@@ -1,8 +1,27 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../styles/nav.css";
 
 const Nav = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    const loggedInAdmin = localStorage.getItem("loggedInAdmin");
+
+    setIsLoggedIn(Boolean(loggedInUser || loggedInAdmin));
+  }, [location]);
+
+  const handleLogout = () => {
+    localStorage.removeItem("loggedInUser");
+    localStorage.removeItem("loggedInAdmin");
+    setIsLoggedIn(false);
+    navigate("/home");
+  };
+
   return (
     <nav className="navbar">
 
@@ -29,11 +48,20 @@ const Nav = () => {
 
         <Link to="/cart">🛒 Cart</Link>
 
-        <Link to="/profile">👤 Profile</Link>
+        {isLoggedIn ? (
+          <Link to="/profile">👤 Profile</Link>
+        ) : null}
 
-        <Link to="/login">Login</Link>
-
-        <Link to="/admin/login">Admin</Link>
+        {isLoggedIn ? (
+          <button
+            className="nav-logout"
+            onClick={handleLogout}
+          >
+            🚪 Logout
+          </button>
+        ) : (
+          <Link to="/login">Login</Link>
+        )}
 
       </div>
 

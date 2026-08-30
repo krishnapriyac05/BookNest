@@ -11,7 +11,6 @@ import Profile from "./Pages/Profile";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 
-import AdminLogin from "./Admin/AdminLogin";
 import AdminRegister from "./Pages/AdminRegister";
 import AdminLayout from "./Admin/AdminLayout";
 import AdminDashBoard from "./Admin/AdminDashBoard";
@@ -80,7 +79,7 @@ const AllRoutes = () => {
 
       <Route
         path="/admin/login"
-        element={<AdminLogin />}
+        element={<Login />}
       />
 
       <Route

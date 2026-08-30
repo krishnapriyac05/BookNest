@@ -150,7 +150,7 @@ const AdminRegister = () => {
         >
           Already have an account?{" "}
           <Link
-            to="/admin/login"
+            to="/login"
             style={{ color: "#2563eb" }}
           >
             Login here

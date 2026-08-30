@@ -70,6 +70,22 @@
   cursor: pointer;
 }
 
+.nav-logout {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 7px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-logout:hover {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
 @media (max-width: 1000px) {
   .navbar {
     flex-wrap: wrap;

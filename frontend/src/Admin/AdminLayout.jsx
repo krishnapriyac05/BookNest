@@ -6,7 +6,8 @@ const AdminLayout = () => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    navigate("/admin/login");
+    localStorage.removeItem("loggedInAdmin");
+    navigate("/login");
   };
 
   return (
@@ -15,7 +16,7 @@ const AdminLayout = () => {
       {/* Sidebar */}
       <aside className="admin-sidebar">
 
-        <Link to="/" className="admin-logo" style={{ textDecoration: "none", color: "white", display: "block" }}>
+        <Link to="/admin/dashboard" className="admin-logo" style={{ textDecoration: "none", color: "white", display: "block" }}>
           📚 BookNest
         </Link>
 
