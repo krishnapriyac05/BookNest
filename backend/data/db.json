@@ -812,6 +812,36 @@
       "total": 439,
       "status": "Pending",
       "date": "2026-08-30"
+    },
+    {
+      "customerName": "Krishna Priya Chikalammetla",
+      "phone": "1234567890",
+      "pincode": "123456",
+      "address": "xvvsedbbgd",
+      "items": [
+        {
+          "id": "1",
+          "name": "Panchatantra Moral Stories",
+          "price": 299,
+          "quantity": 2
+        },
+        {
+          "id": "5",
+          "name": "The Power of Wisdom",
+          "price": 299,
+          "quantity": 2
+        },
+        {
+          "id": "7",
+          "name": "Bhagavad Gita",
+          "price": 299,
+          "quantity": 2
+        }
+      ],
+      "total": 1794,
+      "status": "Delivered",
+      "date": "2026-08-30T13:08:26.663Z",
+      "id": "ESmBzT2ScwQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

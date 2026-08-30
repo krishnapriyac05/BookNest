@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { addToCart } from "../Redux/CartSlice";
+import QuantityStepper from "../Components/QuantityStepper";
 import axios from "axios";
 import "../styles/books.css";
 
 const Books = () => {
-  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const [books, setBooks] = useState([]);
@@ -35,10 +33,6 @@ const Books = () => {
         setLoading(false);
       });
   }, []);
-
-  const handleAddToCart = (book) => {
-    dispatch(addToCart(book));
-  };
 
   const filteredBooks =
     selectedCategory === "All"
@@ -123,12 +117,7 @@ const Books = () => {
 
                 <p>Stock: {book.stock}</p>
 
-                <button
-                  className="add-cart-btn"
-                  onClick={() => handleAddToCart(book)}
-                >
-                  🛒 Add to Cart
-                </button>
+                <QuantityStepper item={book} />
               </div>
             </div>
           ))

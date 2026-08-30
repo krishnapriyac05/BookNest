@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
-import { addToCart } from "../Redux/CartSlice";
+import QuantityStepper from "../Components/QuantityStepper";
 import axios from "axios";
 import "../styles/books.css";
 
 const CategoryBooks = () => {
-  const dispatch = useDispatch();
   const { category } = useParams();
 
   const [books, setBooks] = useState([]);
@@ -49,10 +47,6 @@ const CategoryBooks = () => {
       active = false;
     };
   }, [categoryName]);
-
-  const handleAddToCart = (book) => {
-    dispatch(addToCart(book));
-  };
 
   if (loading) {
     return (
@@ -106,12 +100,7 @@ const CategoryBooks = () => {
 
                 <p>Stock: {book.stock}</p>
 
-                <button
-                  className="add-cart-btn"
-                  onClick={() => handleAddToCart(book)}
-                >
-                  🛒 Add to Cart
-                </button>
+                <QuantityStepper item={book} />
               </div>
             </div>
           ))
