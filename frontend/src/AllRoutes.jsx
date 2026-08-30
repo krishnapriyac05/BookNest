@@ -11,6 +11,8 @@ import Profile from "./Pages/Profile";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 
+import ProtectedRoute from "./Components/ProtectedRoute";
+
 import AdminRegister from "./Pages/AdminRegister";
 import AdminLayout from "./Admin/AdminLayout";
 import AdminDashBoard from "./Admin/AdminDashBoard";
@@ -29,42 +31,74 @@ const AllRoutes = () => {
 
       <Route
         path="/"
-        element={<Home />}
+        element={
+          <ProtectedRoute>
+            <Home />
+          </ProtectedRoute>
+        }
       />
 
       <Route
         path="/home"
-        element={<Home />}
+        element={
+          <ProtectedRoute>
+            <Home />
+          </ProtectedRoute>
+        }
       />
 
       <Route
         path="/books"
-        element={<Books />}
+        element={
+          <ProtectedRoute>
+            <Books />
+          </ProtectedRoute>
+        }
       />
 
       <Route
         path="/stationery"
-        element={<Stationery />}
+        element={
+          <ProtectedRoute>
+            <Stationery />
+          </ProtectedRoute>
+        }
       />
 
       <Route
         path="/categories"
-        element={<Categories />}
+        element={
+          <ProtectedRoute>
+            <Categories />
+          </ProtectedRoute>
+        }
       />
 
       <Route
         path="/category/:category"
-        element={<CategoryBooks />}
+        element={
+          <ProtectedRoute>
+            <CategoryBooks />
+          </ProtectedRoute>
+        }
       />
 
       <Route
         path="/cart"
-        element={<Cart />}
+        element={
+          <ProtectedRoute>
+            <Cart />
+          </ProtectedRoute>
+        }
       />
 
       <Route
         path="/profile"
-        element={<Profile />}
+        element={
+          <ProtectedRoute>
+            <Profile />
+          </ProtectedRoute>
+        }
       />
 
       <Route

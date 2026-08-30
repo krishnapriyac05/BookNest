@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../styles/login.css";
@@ -8,6 +8,17 @@ const Login = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem("loggedInUser");
+    const loggedInAdmin = localStorage.getItem("loggedInAdmin");
+
+    if (loggedInAdmin) {
+      navigate("/admin/dashboard");
+    } else if (loggedInUser) {
+      navigate("/home");
+    }
+  }, [navigate]);
 
   const handleLogin = (e) => {
     e.preventDefault();
