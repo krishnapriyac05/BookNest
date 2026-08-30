@@ -1,0 +1,129 @@
+.stationery-page {
+  min-height: 100vh;
+  padding: 30px 50px;
+  background-color: #f5f7fb;
+}
+
+.stationery-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.stationery-header h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.stationery-header p {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.stationery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.stationery-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stationery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.stationery-image {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.stationery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 15px;
+}
+
+.stationery-details {
+  padding: 18px;
+}
+
+.stationery-details h2 {
+  font-size: 19px;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 42px;
+}
+
+.rating {
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.stationery-details h3 {
+  font-size: 22px;
+  color: #111827;
+  margin: 10px 0 15px;
+}
+
+.add-cart-btn {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 7px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-cart-btn:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 1000px) {
+  .stationery-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .stationery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stationery-page {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .stationery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .stationery-page {
+    padding: 20px;
+  }
+}

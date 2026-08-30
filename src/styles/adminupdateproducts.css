@@ -1,0 +1,47 @@
+.admin-update-container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.admin-update-container h2 {
+  color: #172554;
+  margin-bottom: 25px;
+}
+
+.admin-update-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-update-form input,
+.admin-update-form select,
+.admin-update-form textarea {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.admin-update-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.admin-update-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.admin-update-form button:hover {
+  background: #1d4ed8;
+}
