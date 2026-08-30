@@ -1,9 +1,13 @@
 import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import QuantityStepper from "../Components/QuantityStepper";
 import axios from "axios";
 import "../styles/books.css";
 
 const Home = () => {
+  const [searchParams] = useSearchParams();
+  const query = (searchParams.get("q") || "").trim().toLowerCase();
+
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -20,6 +24,14 @@ const Home = () => {
         setLoading(false);
       });
   }, []);
+
+  const filteredProducts = query
+    ? products.filter((product) =>
+        [product.name, product.category, product.type]
+          .filter(Boolean)
+          .some((field) => field.toLowerCase().includes(query))
+      )
+    : products;
 
   if (loading) {
     return (
@@ -59,21 +71,24 @@ const Home = () => {
       {/* All Products */}
       <div className="products-section">
         <div className="books-header">
-          <h1>Browse All Products</h1>
+          <h1>
+            {query ? `Search Results for "${query}"` : "Browse All Products"}
+          </h1>
           <p>
-            Every book and stationery item available in our store. All items are
-            displayed below.
+            {query
+              ? `Products matching "${query}" are displayed below.`
+              : "Every book and stationery item available in our store. All items are displayed below."}
           </p>
         </div>
       </div>
 
       <div className="books-container" id="products">
-        {products.length === 0 ? (
+        {filteredProducts.length === 0 ? (
           <div className="no-products">
             <h2>No Products Found</h2>
           </div>
         ) : (
-          products.map((product) => (
+          filteredProducts.map((product) => (
             <div className="book-card" key={product.id}>
               <div className="book-image">
                 <img src={product.image} alt={product.name} />

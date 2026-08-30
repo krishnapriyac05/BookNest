@@ -49,18 +49,18 @@
       "rating": 4.7,
       "stock": 30,
       "description": "A wonderful collection of traditional moral stories that teach valuable life lessons.",
-      "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=700&auto=format&fit=crop"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVdI8Wf5JvrfehJvxPz-lUiSzZ8bel6tgJoClsoFJmiJ7GulzeckObk0s&s=10"
     },
     {
       "id": "2",
-      "name": "Grandma's Story Collection",
+      "name": " The Ant and the Grasshopper ",
       "type": "Book",
       "category": "Moral Stories",
-      "price": 179,
+      "price": 200,
       "rating": 4.5,
       "stock": 25,
-      "description": "Heartwarming stories filled with wisdom, kindness and important moral values.",
-      "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=700&auto=format&fit=crop"
+      "description": "A classic moral story that teaches the importance of hard work, saving for the future, and being prepared.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuaTPnJJQ8KgaEK5U6s6lbFKF9Jviupso21jOlPo1nBA&s=10"
     },
     {
       "id": "3",
@@ -71,40 +71,40 @@
       "rating": 4.6,
       "stock": 35,
       "description": "An exciting classic adventure story suitable for young readers.",
-      "image": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=700&auto=format&fit=crop"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2oga6q0cNPzAZP8PekfluBh3V8-E5IYpwnZhzLnmtKQ&s=10"
     },
     {
       "id": "4",
-      "name": "Classic Short Stories",
+      "name": "The Selfish Gaint",
       "type": "Book",
-      "category": "Story Books",
+      "category": "Moral Stories",
       "price": 249,
       "rating": 4.5,
       "stock": 28,
-      "description": "A collection of interesting short stories for everyday reading.",
-      "image": "https://images.unsplash.com/photo-1511108690759-009324a90311?w=700&auto=format&fit=crop"
+      "description": "**Description:** A touching story about a selfish giant who learns the value of **kindness, sharing, and love**.\n",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPkaSYZoLgQBCKm3vXC_Njduw-X1JN_YiFRBUkvRNKHg&s=10"
     },
     {
       "id": "5",
-      "name": "The Power of Wisdom",
+      "name": "Shiva Puranam",
       "type": "Book",
-      "category": "Knowledge & Wisdom",
+      "category": "Spiritual & Religious",
       "price": 299,
       "rating": 4.8,
       "stock": 20,
-      "description": "A thoughtful book containing practical wisdom and valuable life lessons.",
-      "image": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=700&auto=format&fit=crop"
+      "description": "An ancient Hindu scripture that narrates the stories, teachings, and divine glory of Lord Shiva.\n",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ87CvQ9S_dsv6Ixx0oPt5-74HECYgkRx7YcHXzjUHUQ&s=10"
     },
     {
       "id": "6",
-      "name": "Wings of Fire",
+      "name": "Shiva Koti ",
       "type": "Book",
-      "category": "Knowledge & Wisdom",
+      "category": "Spiritual & Religious",
       "price": 350,
       "rating": 4.9,
       "stock": 25,
-      "description": "An inspiring autobiography of Dr. APJ Abdul Kalam.",
-      "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=700&auto=format&fit=crop"
+      "description": "spiritual collection dedicated to Lord Shiva, featuring devotional prayers, mantras, and teachings for divine blessings.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhOkbeHSNLDnhE6rXvc3vr0Qc6sOYC2gmqMB0tOKt-A&s=10"
     },
     {
       "id": "7",
@@ -119,80 +119,69 @@
     },
     {
       "id": "8",
-      "name": "The Upanishads",
+      "name": "Hanuman Chalisa",
       "type": "Book",
       "category": "Spiritual & Religious",
       "price": 399,
       "rating": 4.8,
       "stock": 20,
-      "description": "Ancient spiritual teachings exploring knowledge, consciousness and life.",
-      "image": "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=700&auto=format&fit=crop"
+      "description": "A devotional prayer dedicated to Lord Hanuman, praising his strength, devotion, courage, and divine qualities\n",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJh_1_kf4bgkrk5XfxhzWQsrEdLAmn6QwcQOy3WzzPFA&s=10"
     },
     {
       "id": "9",
-      "name": "NCERT Mathematics Class 10",
+      "name": "Govinda koti  nama",
       "type": "Book",
-      "category": "Academic Books",
-      "price": 150,
+      "category": "Spiritual & Religious",
+      "price": 250,
       "rating": 4.5,
       "stock": 50,
-      "description": "Mathematics textbook designed for Class 10 students.",
-      "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=700&auto=format&fit=crop"
+      "description": "A devotional collection celebrating Lord Govinda through sacred names, prayers, and chants that inspire faith and inner peace.\n",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJqGj4__iC09CDrMbHuqiFD1oI3UtIMfTd2HRz9tw6rQ&s"
     },
     {
       "id": "10",
-      "name": "Physics Fundamentals",
+      "name": "The 7 Habits of Highly Effective People",
       "type": "Book",
-      "category": "Academic Books",
+      "category": "Knowledge & Wisdom",
       "price": 399,
       "rating": 4.6,
       "stock": 25,
-      "description": "A useful physics textbook for students and learners.",
-      "image": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=700&auto=format&fit=crop"
+      "description": "A practical guide that teaches seven powerful habits for personal growth, effective communication, and achieving success.\n",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOXLXCDCapUfQoT_6IBFVFgLDKP9TO2mMfEkFRY9BaLg&s=10"
     },
     {
       "id": "11",
-      "name": "My First Picture Book",
+      "name": "Devotional songs combo",
       "type": "Book",
-      "category": "Children's Books",
-      "price": 149,
+      "category": "Spiritual & Religious",
+      "price": 499,
       "rating": 4.6,
       "stock": 40,
-      "description": "Colourful educational picture book for young children.",
-      "image": "https://images.unsplash.com/photo-1544716278-e513176f20b5?w=700&auto=format&fit=crop"
+      "description": "A collection of soulful devotional songs and bhajans that inspire faith, peace, and spiritual devotion.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh6UVMg7aphaBV_bMtTOBINXvVId05SQbuAeP2wO0Mzw&s"
     },
     {
       "id": "12",
-      "name": "Fun Learning for Kids",
+      "name": "The Intelligent Investor",
       "type": "Book",
-      "category": "Children's Books",
+      "category": "Knowledge & Wisdom",
       "price": 189,
       "rating": 4.7,
       "stock": 35,
-      "description": "Fun educational activities and stories for children.",
-      "image": "https://images.unsplash.com/photo-1589998059171-988d887df646?w=700&auto=format&fit=crop"
+      "description": "A classic guide to investing that teaches smart decision-making, patience, risk management, and long-term financial success.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxliIBGW0ViEA16A7-o2ln5GEdIHhl8p6zY9W28lL7A&s=10"
     },
     {
       "id": "13",
-      "name": "Atomic Habits",
+      "name": "Think and Grow Rich",
       "type": "Book",
-      "category": "Self Development",
+      "category": "Knowledge & Wisdom",
       "price": 399,
       "rating": 4.9,
       "stock": 30,
-      "description": "A practical guide to building good habits and improving everyday life.",
-      "image": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=700&auto=format&fit=crop"
-    },
-    {
-      "id": "14",
-      "name": "Think and Grow Better",
-      "type": "Book",
-      "category": "Self Development",
-      "price": 299,
-      "rating": 4.7,
-      "stock": 22,
-      "description": "An inspirational book about personal growth and success.",
-      "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=700&auto=format&fit=crop"
+      "description": "A motivational book that teaches the power of positive thinking, clear goals, persistence, and a success-oriented mindset.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj6tzCIc9LQDRr-MzKM2aGXe4bUgD1xQkWHaHM3is01g&s=10"
     },
     {
       "id": "15",
@@ -203,18 +192,7 @@
       "rating": 4.8,
       "stock": 35,
       "description": "An inspiring novel about dreams, destiny and discovering your purpose.",
-      "image": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=700&auto=format&fit=crop"
-    },
-    {
-      "id": "16",
-      "name": "Classic English Novels",
-      "type": "Book",
-      "category": "Novels & Literature",
-      "price": 329,
-      "rating": 4.6,
-      "stock": 20,
-      "description": "A collection of timeless English literature and classic novels.",
-      "image": "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=700&auto=format&fit=crop"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAm62CmtfAVVybX7DflyvKN4ipsfWMARIDPB5qZUH4QA&s=10"
     },
     {
       "id": "17",
@@ -225,7 +203,7 @@
       "rating": 4.7,
       "stock": 30,
       "description": "Practice material for aptitude and reasoning competitive examinations.",
-      "image": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=700&auto=format&fit=crop"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2GsrF-YmLVTNHqHHtph_jBh5z-uAsS2J73ixF6z2gWA&s=10"
     },
     {
       "id": "18",
@@ -236,29 +214,7 @@
       "rating": 4.5,
       "stock": 28,
       "description": "A comprehensive general knowledge book for competitive exam preparation.",
-      "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=700&auto=format&fit=crop"
-    },
-    {
-      "id": "19",
-      "name": "Introduction to Computer Science",
-      "type": "Book",
-      "category": "Science & Technology",
-      "price": 450,
-      "rating": 4.8,
-      "stock": 20,
-      "description": "An introductory book covering fundamental computer science concepts.",
-      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=700&auto=format&fit=crop"
-    },
-    {
-      "id": "20",
-      "name": "Artificial Intelligence Basics",
-      "type": "Book",
-      "category": "Science & Technology",
-      "price": 499,
-      "rating": 4.7,
-      "stock": 18,
-      "description": "Learn the fundamental concepts of artificial intelligence and machine learning.",
-      "image": "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=700&auto=format&fit=crop"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd_16ChcRCRHrkz1v-OEv1X6JsypaWa5rP6kEc0lYnfQ&s=10"
     },
     {
       "id": "21",
@@ -269,51 +225,51 @@
       "rating": 4.5,
       "stock": 50,
       "description": "High-quality ruled notebook for students and daily notes.",
-      "image": "https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=700&auto=format&fit=crop"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwzfY-RNfjRF3Zz33GV3BpZzO-MthUxEyDJd5F--GGQA&s=10"
     },
     {
       "id": "22",
-      "name": "Hardcover Diary",
+      "name": "Classmate note book combo ",
       "type": "Stationery",
       "category": "Notebooks",
-      "price": 180,
+      "price": 499,
       "rating": 4.7,
       "stock": 35,
       "description": "Elegant hardcover diary for personal notes and journaling.",
-      "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?w=700&auto=format&fit=crop"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJdVhhrlADJGrBB6Shn-2eWORbt_EuRSk4xMyOBfJUA&s=10"
     },
     {
       "id": "23",
-      "name": "Blue Ball Pen Set",
+      "name": "Glossy Translucent Blue Pen",
       "type": "Stationery",
       "category": "Pens",
       "price": 80,
       "rating": 4.3,
       "stock": 100,
-      "description": "Smooth writing blue ball pens for everyday use.",
-      "image": "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=700&auto=format&fit=crop"
+      "description": "Smooth writing blue  pens for everyday use.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUCaSowKv210z7bjvfcDlOpWdAdAE2uoQXE7knJ4BWeA&s"
     },
     {
       "id": "24",
       "name": "Premium Pencil Set",
       "type": "Stationery",
       "category": "Pencils",
-      "price": 60,
+      "price": 250,
       "rating": 4.4,
       "stock": 80,
-      "description": "Premium pencils for writing, drawing and sketching.",
-      "image": "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=700&auto=format&fit=crop"
+      "description": "Premium pencils for  drawing and sketching.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJm56MWXzYRSdXXw01TvpYzn5MGlDUG211ENrLAuu2Fg&s"
     },
     {
       "id": "25",
       "name": "Colour Pencil Set",
       "type": "Stationery",
       "category": "Art Supplies",
-      "price": 160,
+      "price": 500,
       "rating": 4.6,
       "stock": 45,
       "description": "Bright colour pencils for drawing and creative artwork.",
-      "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=700&auto=format&fit=crop"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2965X3dwv2ntxvKMEBytJEPbVUq12WhhaGkaFgD4U2g&s=10"
     },
     {
       "id": "26",
@@ -324,7 +280,7 @@
       "rating": 4.6,
       "stock": 45,
       "description": "Complete geometry box with essential mathematical tools.",
-      "image": "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=700&auto=format&fit=crop"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi0mxuOoCLBxTZHwM853Gt-X8DVUB6eeQzOAE-7VCocg&s=10"
     },
     {
       "id": "27",
@@ -335,18 +291,18 @@
       "rating": 4.5,
       "stock": 55,
       "description": "Bright coloured highlighters for notes and important points.",
-      "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=700&auto=format&fit=crop"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIjdowiTikJeB5DHQaoSpY0sOYbTlpLydFuoeeb-kCVg&s=10"
     },
     {
       "id": "28",
       "name": "Sticky Notes Pack",
       "type": "Stationery",
       "category": "Office Supplies",
-      "price": 70,
+      "price": 100,
       "rating": 4.2,
       "stock": 60,
       "description": "Colourful sticky notes for reminders and quick notes.",
-      "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=700&auto=format&fit=crop"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSje7IudTPHM3EI1aojT0RxpJuWmqoJ_2HiHjmHfuf6g&s=10"
     },
     {
       "id": "29",
@@ -357,18 +313,18 @@
       "rating": 4.5,
       "stock": 35,
       "description": "A4 drawing book suitable for art and creative work.",
-      "image": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=700&auto=format&fit=crop"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMj21AOJTNWTT-brjUCCyI2DhLWxXlTVcV81JHzxcd1A&s=10"
     },
     {
       "id": "30",
       "name": "School Stationery Kit",
       "type": "Stationery",
       "category": "School Supplies",
-      "price": 250,
+      "price": 750,
       "rating": 4.7,
       "stock": 30,
       "description": "Complete stationery kit for school and college students.",
-      "image": "data:image/jpeg;base64,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"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQDxHDv4VLFHrbBvjJLEd9Lf7thETBynw_ylZei_QzBQ&s=10"
     },
     {
       "name": "Spider Man Pencil",
@@ -386,11 +342,11 @@
       "name": "Aesop's Timeless Fables",
       "type": "Book",
       "category": "Moral Stories",
-      "price": 199,
+      "price": 250,
       "rating": 4.6,
       "stock": 30,
       "description": "A classic collection of age-old fables that gently teach honesty, kindness and wisdom.",
-      "image": "https://images.pexels.com/photos/8922325/pexels-photo-8922325.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Vw-C4KLrJL_U1aWAOmEJ2chCMJAqOK0V4b56W5zvKA&s"
     },
     {
       "id": "32",
@@ -401,18 +357,18 @@
       "rating": 4.7,
       "stock": 28,
       "description": "Inspiring short stories with thoughtful life lessons for young and growing minds.",
-      "image": "https://images.pexels.com/photos/9979610/pexels-photo-9979610.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS31W0sEPiF-CJxeWXL4Mscfwspen9PQ5LSMg3oSJNeww&s=10"
     },
     {
       "id": "33",
       "name": "Tenali Raman Tales",
       "type": "Book",
       "category": "Moral Stories",
-      "price": 229,
+      "price": 399,
       "rating": 4.8,
       "stock": 32,
       "description": "Humorous and wise tales of Tenali Raman that teach cleverness and moral values.",
-      "image": "https://images.pexels.com/photos/5614392/pexels-photo-5614392.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGL3iQgQv382Eug7ate-6vGdQahEljog1KvPznnhbtLg&s=10"
     },
     {
       "id": "34",
@@ -423,51 +379,29 @@
       "rating": 4.5,
       "stock": 25,
       "description": "A magical storybook adventure full of mystery, wizards and unforgettable quests.",
-      "image": "https://images.pexels.com/photos/7978238/pexels-photo-7978238.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNH6dXdpq6dVVlT6Sp918vYWdODXPUcy8ed_oVaW4opQ&s"
     },
     {
       "id": "35",
       "name": "Magical Bedtime Stories",
       "type": "Book",
       "category": "Story Books",
-      "price": 179,
+      "price": 299,
       "rating": 4.6,
       "stock": 40,
       "description": "Warm, dreamy bedtime stories that spark imagination and sweet dreams for children.",
-      "image": "https://images.pexels.com/photos/6157222/pexels-photo-6157222.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7GgNUSgKT6cJZ29dLaXmdyZ8-NbUG4dpD6_ug1wjrdg&s"
     },
     {
       "id": "36",
-      "name": "Whimsical Storybook Journeys",
+      "name": "Hansel and Gretel",
       "type": "Book",
       "category": "Story Books",
       "price": 219,
       "rating": 4.7,
       "stock": 26,
       "description": "Fanciful journeys through enchanted lands told with vibrant storytelling.",
-      "image": "https://images.pexels.com/photos/37981561/pexels-photo-37981561.jpeg?auto=compress&cs=tinysrgb&w=700"
-    },
-    {
-      "id": "37",
-      "name": "Great Thinkers of India",
-      "type": "Book",
-      "category": "Knowledge & Wisdom",
-      "price": 349,
-      "rating": 4.8,
-      "stock": 18,
-      "description": "Profiles of legendary Indian thinkers and their timeless contributions to wisdom.",
-      "image": "https://images.pexels.com/photos/4836622/pexels-photo-4836622.jpeg?auto=compress&cs=tinysrgb&w=700"
-    },
-    {
-      "id": "38",
-      "name": "The Treasury of Wisdom",
-      "type": "Book",
-      "category": "Knowledge & Wisdom",
-      "price": 319,
-      "rating": 4.7,
-      "stock": 22,
-      "description": "A handpicked treasury of wise sayings, parables and reflections for daily living.",
-      "image": "https://images.pexels.com/photos/18062023/pexels-photo-18062023.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKrl2JrgUWiGY-gF65x_8czqmWYFDcxKXeSgzRW-Fzw&s=10"
     },
     {
       "id": "39",
@@ -477,63 +411,41 @@
       "price": 349,
       "rating": 4.9,
       "stock": 35,
-      "description": "The immortal Indian epic retold with devotion, duty and triumph of good over evil.",
-      "image": "https://images.pexels.com/photos/31498376/pexels-photo-31498376.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "description": " An ancient Hindu epic that tells the story of Lord Rama, his devotion, courage, righteousness, and journey to defeat evil.\n",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyrLX1w_tS2uwsWPLU1e3YCYEuBRlef9XZ-02eigyh-A&s=10"
     },
     {
       "id": "40",
-      "name": "Hanuman Chalisa & Devotional Prayers",
+      "name": "Bhakthi Geethalu ",
       "type": "Book",
       "category": "Spiritual & Religious",
-      "price": 159,
+      "price": 499,
       "rating": 4.9,
       "stock": 50,
-      "description": "A sacred collection of Hanuman Chalisa and soulful devotional prayers for daily worship.",
-      "image": "https://images.pexels.com/photos/33685534/pexels-photo-33685534.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "description": "A collection of soulful devotional songs that inspire faith, peace, devotion, and spiritual connection with God.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUB1ceC2yQudERmLD5hLZhyn_Tx4-Vo5WTsTZXeP6-dw&s=10"
     },
     {
       "id": "41",
-      "name": "Yoga Sutras of Patanjali",
+      "name": "Krishna Leela",
       "type": "Book",
       "category": "Spiritual & Religious",
       "price": 279,
       "rating": 4.8,
       "stock": 25,
-      "description": "The ancient yogic philosophy decoded with practical guidance for a calm, focused life.",
-      "image": "https://images.pexels.com/photos/31373536/pexels-photo-31373536.jpeg?auto=compress&cs=tinysrgb&w=700"
-    },
-    {
-      "id": "42",
-      "name": "Divine Bhajans & Kirtan Collection",
-      "type": "Book",
-      "category": "Spiritual & Religious",
-      "price": 199,
-      "rating": 4.7,
-      "stock": 30,
-      "description": "Melodious bhajans and kirtans that bring peace, devotion and spiritual joy.",
-      "image": "https://images.pexels.com/photos/36868449/pexels-photo-36868449.jpeg?auto=compress&cs=tinysrgb&w=700"
-    },
-    {
-      "id": "43",
-      "name": "The Art of Inner Peace",
-      "type": "Book",
-      "category": "Spiritual & Religious",
-      "price": 299,
-      "rating": 4.8,
-      "stock": 20,
-      "description": "A serene guide to meditation, mindfulness and finding calm within everyday chaos.",
-      "image": "https://images.pexels.com/photos/36188810/pexels-photo-36188810.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "description": "A collection of divine stories from Lord Krishna’s life, highlighting his childhood adventures, wisdom, love, and devotion.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL3RyLz1Esk3dFSGv70wVdnkvwKN_RiPNJhRITxMjtlw&s"
     },
     {
       "id": "44",
-      "name": "NCERT Science Class 9",
+      "name": "Probability and Statistics",
       "type": "Book",
       "category": "Academic Books",
-      "price": 140,
+      "price": 500,
       "rating": 4.6,
       "stock": 60,
       "description": "Complete NCERT Science textbook for Class 9 students with clear explanations.",
-      "image": "https://images.pexels.com/photos/34488235/pexels-photo-34488235.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1tsq0j3-dXKASWQup-gVcOAFCR7r4NLPcz06QUdQPKg&s=10"
     },
     {
       "id": "45",
@@ -798,6 +710,17 @@
       "stock": 36,
       "description": "A colourful first-reader collection that builds vocabulary and a love for books.",
       "image": "https://images.pexels.com/photos/31881618/pexels-photo-31881618.jpeg?auto=compress&cs=tinysrgb&w=700"
+    },
+    {
+      "name": " Introduction Computer Science",
+      "type": "Book",
+      "category": "Science & Technology",
+      "price": 500,
+      "rating": 4.2,
+      "description": "A beginner-friendly introduction to computer science, covering basic concepts, programming, algorithms, data, and problem-solving.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6R0ymR3aeIjtHWhcHA9auY5fTGL3ehsQKCJKZ8wvgA&s=10",
+      "stock": 20,
+      "id": "_DFx3cVQf0I"
     }
   ],
   "orders": [
