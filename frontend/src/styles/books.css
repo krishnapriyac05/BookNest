@@ -1,7 +1,7 @@
 .books-page {
   min-height: 100vh;
   padding: 30px 50px;
-  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  background-color: #e7fef8;
   font-family: "Inter", "Poppins", "Segoe UI", system-ui, -apple-system,
     sans-serif;
 }
