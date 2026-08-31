@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import QuantityStepper from "../Components/QuantityStepper";
 import axios from "axios";
@@ -26,7 +26,7 @@ const CategoryBooks = () => {
 
     axios
       .get(
-        `http://localhost:3000/products?type=Book&category=${encodeURIComponent(
+        `http://localhost:5000/products?type=Book&category=${encodeURIComponent(
           categoryName
         )}`
       )

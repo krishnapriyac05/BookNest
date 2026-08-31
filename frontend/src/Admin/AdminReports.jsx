@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/adminlist.css";
 
@@ -9,17 +9,17 @@ const AdminReports = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/products")
+      .get("http://localhost:5000/products")
       .then((res) => setProducts(res.data))
       .catch(() => {});
 
     axios
-      .get("http://localhost:3000/users")
+      .get("http://localhost:5000/users")
       .then((res) => setUsers(res.data))
       .catch(() => {});
 
     axios
-      .get("http://localhost:3000/orders")
+      .get("http://localhost:5000/orders")
       .then((res) => setOrders(res.data))
       .catch(() => {});
   }, []);

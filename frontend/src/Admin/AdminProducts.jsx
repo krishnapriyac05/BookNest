@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/adminproducts.css";
@@ -10,7 +10,7 @@ const AdminProducts = () => {
   // Get products from JSON Server
   const getProducts = () => {
     axios
-      .get("http://localhost:3000/products")
+      .get("http://localhost:5000/products")
       .then((response) => {
         setProducts(response.data);
       })
@@ -34,7 +34,7 @@ const AdminProducts = () => {
     }
 
     axios
-      .delete(`http://localhost:3000/products/${id}`)
+      .delete(`http://localhost:5000/products/${id}`)
       .then(() => {
         alert("Product deleted successfully!");
         getProducts();

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/adminlist.css";
 
@@ -7,7 +7,7 @@ const AdminUsers = () => {
 
   const getUsers = () => {
     axios
-      .get("http://localhost:3000/users")
+      .get("http://localhost:5000/users")
       .then((res) => setUsers(res.data))
       .catch((err) => console.log(err));
   };
@@ -20,7 +20,7 @@ const AdminUsers = () => {
     if (!window.confirm("Delete this user?")) return;
 
     axios
-      .delete(`http://localhost:3000/users/${id}`)
+      .delete(`http://localhost:5000/users/${id}`)
       .then(() => {
         alert("User deleted successfully!");
         getUsers();
@@ -32,7 +32,7 @@ const AdminUsers = () => {
     const nextRole = user.role === "admin" ? "user" : "admin";
 
     axios
-      .patch(`http://localhost:3000/users/${user.id}`, { role: nextRole })
+      .patch(`http://localhost:5000/users/${user.id}`, { role: nextRole })
       .then(() => {
         alert(`Role changed to ${nextRole}`);
         getUsers();

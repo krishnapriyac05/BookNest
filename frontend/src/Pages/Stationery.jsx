@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import QuantityStepper from "../Components/QuantityStepper";
 import axios from "axios";
@@ -17,7 +17,7 @@ const Stationery = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/products?type=Stationery")
+      .get("http://localhost:5000/products?type=Stationery")
       .then((response) => {
         console.log("Stationery Products:", response.data);
 

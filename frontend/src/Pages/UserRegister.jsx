@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -31,7 +31,7 @@ const UserRegister = () => {
     };
 
     axios
-      .post("http://localhost:3000/users", userData)
+      .post("http://localhost:5000/users", userData)
       .then((response) => {
 
         console.log("User Registered:", response.data);

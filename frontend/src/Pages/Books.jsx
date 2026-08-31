@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import QuantityStepper from "../Components/QuantityStepper";
 import axios from "axios";
@@ -15,7 +15,7 @@ const Books = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/products?type=Book")
+      .get("http://localhost:5000/products?type=Book")
       .then((response) => {
         const data = response.data;
         setBooks(data);

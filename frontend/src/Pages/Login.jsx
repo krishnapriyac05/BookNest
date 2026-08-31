@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../styles/login.css";
@@ -25,8 +25,8 @@ const Login = () => {
 
     axios
       .all([
-        axios.get("http://localhost:3000/users"),
-        axios.get("http://localhost:3000/admin"),
+        axios.get("http://localhost:5000/users"),
+        axios.get("http://localhost:5000/admin"),
       ])
       .then(
         axios.spread((usersResponse, adminsResponse) => {

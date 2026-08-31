@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../styles/register.css";
@@ -33,7 +33,7 @@ const Register = () => {
     }
 
     axios
-      .get("http://localhost:3000/users")
+      .get("http://localhost:5000/users")
       .then((response) => {
         const users = response.data;
 
@@ -55,7 +55,7 @@ const Register = () => {
         };
 
         return axios.post(
-          "http://localhost:3000/users",
+          "http://localhost:5000/users",
           newUser
         );
       })

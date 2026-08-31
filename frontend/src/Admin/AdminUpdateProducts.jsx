@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import "../styles/adminupdateproducts.css";
@@ -20,7 +20,7 @@ const AdminUpdateProducts = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/products/${id}`)
+      .get(`http://localhost:5000/products/${id}`)
       .then((response) => {
         setProduct(response.data);
       })
@@ -42,7 +42,7 @@ const AdminUpdateProducts = () => {
     e.preventDefault();
 
     axios
-      .put(`http://localhost:3000/products/${id}`, {
+      .put(`http://localhost:5000/products/${id}`, {
         ...product,
         price: Number(product.price),
         rating: Number(product.rating),

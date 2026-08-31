@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+﻿import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../styles/nav.css";
@@ -36,7 +36,7 @@ const Nav = () => {
     }
 
     return axios
-      .get("http://localhost:3000/products")
+      .get("http://localhost:5000/products")
       .then((response) => {
         productsCache.current = response.data;
         cacheLoaded.current = true;

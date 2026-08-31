@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/adminlogin.css";
@@ -26,7 +26,7 @@ const AdminRegister = () => {
     setError("");
 
     axios
-      .get("http://localhost:3000/admin")
+      .get("http://localhost:5000/admin")
       .then((response) => {
         const admins = response.data;
 
@@ -45,7 +45,7 @@ const AdminRegister = () => {
           role: "admin"
         };
 
-        return axios.post("http://localhost:3000/admin", adminData);
+        return axios.post("http://localhost:5000/admin", adminData);
       })
       .then(() => {
         alert("Admin registration successful!");

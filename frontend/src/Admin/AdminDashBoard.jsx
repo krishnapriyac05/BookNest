@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "../styles/admindashboard.css";
@@ -13,21 +13,21 @@ const AdminDashBoard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/products")
+      .get("http://localhost:5000/products")
       .then((res) =>
         setCounts((c) => ({ ...c, products: res.data.length }))
       )
       .catch(() => {});
 
     axios
-      .get("http://localhost:3000/orders")
+      .get("http://localhost:5000/orders")
       .then((res) =>
         setCounts((c) => ({ ...c, orders: res.data.length }))
       )
       .catch(() => {});
 
     axios
-      .get("http://localhost:3000/users")
+      .get("http://localhost:5000/users")
       .then((res) =>
         setCounts((c) => ({ ...c, users: res.data.length }))
       )

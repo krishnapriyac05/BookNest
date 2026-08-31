@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../styles/adminaddproducts.css";
@@ -32,7 +32,7 @@ const AdminAddProducts = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3000/products", {
+      .post("http://localhost:5000/products", {
         ...product,
         price: Number(product.price),
         rating: Number(product.rating),
@@ -160,6 +160,8 @@ const AdminAddProducts = () => {
                   <option value="Notebooks">Notebooks</option>
                   <option value="Pens">Pens</option>
                   <option value="Pencils">Pencils</option>
+                  <option value="Colour Pens">Colour Pens</option>
+                  <option value="Colour Pencils">Colour Pencils</option>
                   <option value="Art Supplies">Art Supplies</option>
                   <option value="School Supplies">
                     School Supplies
@@ -168,6 +170,15 @@ const AdminAddProducts = () => {
                     Office Supplies
                   </option>
                   <option value="Geometry">Geometry</option>
+                  <option value="Glue & Tape">Glue &amp; Tape</option>
+                  <option value="Labels & Book Covers">
+                    Labels &amp; Book Covers
+                  </option>
+                  <option value="Papers">Papers</option>
+                  <option value="Charts">Charts</option>
+                  <option value="School Accessories">
+                    School Accessories
+                  </option>
                 </>
               )}
             </select>

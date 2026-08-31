@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   removeFromCart,
@@ -78,7 +78,7 @@ const Cart = () => {
     setOrderError("");
 
     axios
-      .post("http://localhost:3000/orders", orderData)
+      .post("http://localhost:5000/orders", orderData)
       .then(() => {
         dispatch(clearCart());
         setPlacingOrder(false);

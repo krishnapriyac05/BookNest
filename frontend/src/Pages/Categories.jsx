@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "../styles/books.css";
@@ -79,12 +79,12 @@ const Categories = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/products?type=Book")
+      .get("http://localhost:5000/products?type=Book")
       .then((res) => setBooks(res.data))
       .catch(() => {});
 
     axios
-      .get("http://localhost:3000/products?type=Stationery")
+      .get("http://localhost:5000/products?type=Stationery")
       .then((res) => setStationery(res.data))
       .catch(() => {});
   }, []);
