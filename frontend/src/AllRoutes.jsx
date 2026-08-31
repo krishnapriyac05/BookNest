@@ -66,6 +66,15 @@ const AllRoutes = () => {
       />
 
       <Route
+        path="/stationery/:category"
+        element={
+          <ProtectedRoute>
+            <Stationery />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
         path="/categories"
         element={
           <ProtectedRoute>

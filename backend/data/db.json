@@ -264,7 +264,7 @@
       "id": "25",
       "name": "Colour Pencil Set",
       "type": "Stationery",
-      "category": "Art Supplies",
+      "category": "Colour Pencils",
       "price": 500,
       "rating": 4.6,
       "stock": 45,
@@ -456,7 +456,7 @@
       "rating": 4.5,
       "stock": 40,
       "description": "A complete guide to English grammar, writing skills and composition for all levels.",
-      "image": "https://images.pexels.com/photos/37627841/pexels-photo-37627841.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcQaXsSPtZLSARLnW6t8feysTAXKCB8ZQd8kQ89yA6Dg&s"
     },
     {
       "id": "46",
@@ -482,69 +482,47 @@
     },
     {
       "id": "48",
-      "name": "Animal Friends Picture Book",
+      "name": "The Little Prince",
       "type": "Book",
       "category": "Children's Books",
       "price": 169,
       "rating": 4.7,
       "stock": 45,
-      "description": "Bright and colourful animal picture book perfect for early learners and toddlers.",
-      "image": "https://images.pexels.com/photos/36764575/pexels-photo-36764575.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "description": "A heartwarming story about a young prince who travels from planet to planet, meeting unusual characters and learning about friendship, love, kindness, and the meaning of life.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFejM7IV5slMVxPzg7N8FnvLiUCGCHpeMNhPpVY_3ynQ&s=10"
     },
     {
       "id": "49",
-      "name": "Bedtime Lullaby Stories",
+      "name": "The Secret Garden",
       "type": "Book",
       "category": "Children's Books",
       "price": 159,
       "rating": 4.6,
       "stock": 38,
-      "description": "Gentle lullabies and soothing stories that help little ones drift off to sleep.",
-      "image": "https://images.pexels.com/photos/10643450/pexels-photo-10643450.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "description": "A beautiful children’s story about Mary Lennox, a lonely girl who discovers a hidden garden. As she brings the garden back to life, she discovers friendship, happiness, kindness, and the magic of nature.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4OGb28U4GjnFNaZzrJYMtuLb1K_Km_Xp2P2YvqKmvmA&s=10"
     },
     {
       "id": "50",
-      "name": "The Dreamy Castle Adventures",
+      "name": "The Cloud Castel of dreams",
       "type": "Book",
       "category": "Children's Books",
       "price": 189,
       "rating": 4.8,
       "stock": 30,
-      "description": "A magical adventure of brave children exploring a dreamy fairytale castle.",
-      "image": "https://images.pexels.com/photos/35682496/pexels-photo-35682496.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "description": "magical and imaginative children’s story that takes readers on an enchanting journey through a mysterious cloud castle filled with wonder, adventure, friendship, and dreams.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPCX7UHWozlAW1G6jVRVnI8jrgJoyWrSH90jGFg1BkJA&s=10"
     },
     {
       "id": "51",
       "name": "Faraway Castle Picture Tales",
       "type": "Book",
       "category": "Children's Books",
-      "price": 179,
+      "price": 249,
       "rating": 4.7,
       "stock": 33,
       "description": "Picture-perfect tales spun around faraway castles, kings and friendly dragons.",
-      "image": "https://images.pexels.com/photos/31466067/pexels-photo-31466067.jpeg?auto=compress&cs=tinysrgb&w=700"
-    },
-    {
-      "id": "52",
-      "name": "Awaken Your Potential",
-      "type": "Book",
-      "category": "Self Development",
-      "price": 329,
-      "rating": 4.8,
-      "stock": 25,
-      "description": "Step-by-step guidance to unlock your inner strengths and achieve your goals.",
-      "image": "https://images.pexels.com/photos/37525338/pexels-photo-37525338.jpeg?auto=compress&cs=tinysrgb&w=700"
-    },
-    {
-      "id": "53",
-      "name": "The Daily Habit Journal",
-      "type": "Book",
-      "category": "Self Development",
-      "price": 259,
-      "rating": 4.6,
-      "stock": 30,
-      "description": "Build life-changing routines with simple daily habits and mindful journaling.",
-      "image": "https://images.pexels.com/photos/7818105/pexels-photo-7818105.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkiK4K_L8QV-lgRIRp9W-8H_oU9rfsJR47n7FtCvZu3Q&s=10"
     },
     {
       "id": "54",
@@ -555,7 +533,7 @@
       "rating": 4.7,
       "stock": 28,
       "description": "Practical techniques to develop a growth mindset and perform at your best.",
-      "image": "https://images.pexels.com/photos/29638482/pexels-photo-29638482.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqngxav7LeSOycVX3eO43lb3msScLzWJnap9sYCj4WFQ&s=10"
     },
     {
       "id": "55",
@@ -566,7 +544,7 @@
       "rating": 4.8,
       "stock": 25,
       "description": "Timeless advice to replace fear with courage and doubt with lasting confidence.",
-      "image": "https://images.pexels.com/photos/1742370/pexels-photo-1742370.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVGlybkxP_7utSAuQQP-8btHFK1EHxT8sZluHZI5Z3ng&s"
     },
     {
       "id": "56",
@@ -592,124 +570,124 @@
     },
     {
       "id": "58",
-      "name": "A Tale of Two Cities",
+      "name": "JEE Main commbo",
       "type": "Book",
-      "category": "Novels & Literature",
-      "price": 279,
+      "category": "Competitive Exam Books",
+      "price": 2499,
       "rating": 4.7,
       "stock": 22,
-      "description": "Charles Dickens' stirring classic set against the backdrop of the French Revolution.",
-      "image": "https://images.pexels.com/photos/15776152/pexels-photo-15776152.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "description": "A comprehensive study resource covering Physics, Chemistry, and Mathematics with important concepts, formulas, practice questions, and exam-oriented preparation to help students prepare effectively for the JEE Main examination.\n",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkPXscnBUbXXxDj4JAvjKNOaB1r2j0YkBDSMqhFxVzeQ&s=10"
     },
     {
       "id": "59",
-      "name": "The Blue Umbrella",
+      "name": "SBI PO GUIDE",
       "type": "Book",
-      "category": "Novels & Literature",
-      "price": 199,
+      "category": "Competitive Exam Books",
+      "price": 999,
       "rating": 4.8,
       "stock": 35,
-      "description": "Ruskin Bond's beautiful story of childhood, simplicity and generosity in the hills.",
-      "image": "https://images.pexels.com/photos/29391658/pexels-photo-29391658.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "description": "A comprehensive study resource covering Quantitative Aptitude, Reasoning Ability, English Language, General Awareness, and Banking Awareness. It includes practice questions and exam-oriented preparation material to help candidates prepare effectively for the SBI PO examination.\n",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3KDgIjwMv3mR2Z8hBQwEvtwoEqwsAXL_UMHQD07uw3w&s"
     },
     {
       "id": "60",
-      "name": "Quantitative Aptitude Master",
+      "name": "NEET ",
       "type": "Book",
       "category": "Competitive Exam Books",
-      "price": 345,
+      "price": 999,
       "rating": 4.7,
       "stock": 40,
-      "description": "Comprehensive quantitative aptitude practice with shortcuts for competitive exams.",
-      "image": "https://images.pexels.com/photos/37827737/pexels-photo-37827737.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "description": "A useful preparation book covering important concepts from Physics, Chemistry, and Biology, along with practice questions and exam-oriented content to help students prepare effectively for the NEET examination.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPM8npoU87fuqvD1d5J4EB5bStO5YTkRdfUVrhkPTTmg&s"
     },
     {
       "id": "61",
-      "name": "Reasoning & Logical Thinking",
+      "name": "GATE 2026",
       "type": "Book",
       "category": "Competitive Exam Books",
-      "price": 310,
+      "price": 1499,
       "rating": 4.6,
       "stock": 35,
-      "description": "Master verbal and non-verbal reasoning with graded practice sets and solutions.",
-      "image": "https://images.pexels.com/photos/37778746/pexels-photo-37778746.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "description": "A comprehensive study resource for GATE aspirants covering core concepts, important topics, practice questions, and previous-year questions to help students strengthen their preparation and perform well in the examination.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi83ji-AcWHHgFWsmlfWqISUdbpOJ5bCWkQCMAbxYcnw&s=10"
     },
     {
       "id": "62",
-      "name": "Current Affairs & GK 2026",
+      "name": "SSC CGL Tier-1 and Tier-2",
       "type": "Book",
       "category": "Competitive Exam Books",
-      "price": 260,
+      "price": 999,
       "rating": 4.5,
       "stock": 50,
-      "description": "Up-to-date current affairs and general knowledge for all competitive examinations.",
-      "image": "https://images.pexels.com/photos/3782235/pexels-photo-3782235.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "description": "A comprehensive preparation book covering Quantitative Aptitude, Reasoning, English Language, and General Awareness. It includes practice questions, previous-year papers, and useful explanations to help candidates prepare effectively for the SSC CGL Tier-I and Tier-II examinations.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXR_a7cycF4lfOpDvYwZjTcT9tDzpkEMqVIBPrutFy0g&s"
     },
     {
       "id": "63",
       "name": "UPSC Civil Services Guide",
       "type": "Book",
       "category": "Competitive Exam Books",
-      "price": 450,
+      "price": 999,
       "rating": 4.8,
       "stock": 25,
       "description": "A complete preparation guide covering syllabus, strategy and subject essentials.",
-      "image": "https://images.pexels.com/photos/612997/pexels-photo-612997.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQdM7Nm1RjUiALsRscKfIUbUzJpSj9n8mOYl3bYnOKHw&s=10"
     },
     {
       "id": "64",
       "name": "Data Structures & Algorithms",
       "type": "Book",
       "category": "Science & Technology",
-      "price": 420,
+      "price": 550,
       "rating": 4.7,
       "stock": 20,
       "description": "Core concepts of data structures and algorithms explained with clear examples.",
-      "image": "https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnwWaD2kVypTwCymSzj2moQ7_HarMqjQ_SvgE7ONjQDg&s=10"
     },
     {
       "id": "65",
       "name": "Machine Learning Fundamentals",
       "type": "Book",
       "category": "Science & Technology",
-      "price": 499,
+      "price": 799,
       "rating": 4.8,
       "stock": 18,
       "description": "An accessible introduction to machine learning concepts, models and applications.",
-      "image": "https://images.pexels.com/photos/37709121/pexels-photo-37709121.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ZQX0RwH4cXilSqaxYswyTsjzfXSC6G0bEaoYLUDZqw&s=10"
     },
     {
       "id": "66",
       "name": "Modern Web Development",
       "type": "Book",
       "category": "Science & Technology",
-      "price": 449,
+      "price": 499,
       "rating": 4.7,
       "stock": 22,
       "description": "Build modern, responsive websites from scratch with current web technologies.",
-      "image": "https://images.pexels.com/photos/34803994/pexels-photo-34803994.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOKMTQOh14JMpzX_E4vzZM5vWueyRe_7iaLSD-qIsMQ&s=10"
     },
     {
       "id": "67",
       "name": "JavaScript Programming Basics",
       "type": "Book",
       "category": "Science & Technology",
-      "price": 299,
+      "price": 499,
       "rating": 4.6,
       "stock": 25,
       "description": "Learn JavaScript step by step with hands-on examples for beginners and students.",
-      "image": "https://images.pexels.com/photos/1181271/pexels-photo-1181271.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSplB5aUJCjPaixVVZJF7qTOooiTuHnQqBw-mBY3MGBAQ&s=10"
     },
     {
       "id": "68",
-      "name": "Rising Readers Story Collection",
+      "name": "The Adventures of Pinocchio",
       "type": "Book",
       "category": "Children's Books",
       "price": 189,
       "rating": 4.7,
       "stock": 36,
-      "description": "A colourful first-reader collection that builds vocabulary and a love for books.",
-      "image": "https://images.pexels.com/photos/31881618/pexels-photo-31881618.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "description": "A classic children’s story about a wooden puppet who dreams of becoming a real boy. Through exciting adventures and challenges, Pinocchio learns about honesty, responsibility, courage, and making the right choices.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK790n7eRb-v3xr0hQUyk4opmsKXupbU2jLY4Gft9YHw&s=10"
     },
     {
       "name": " Introduction Computer Science",
@@ -721,6 +699,182 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6R0ymR3aeIjtHWhcHA9auY5fTGL3ehsQKCJKZ8wvgA&s=10",
       "stock": 20,
       "id": "_DFx3cVQf0I"
+    },
+    {
+      "name": "Reynolds Trimax ",
+      "type": "Stationery",
+      "category": "Pens",
+      "price": 150,
+      "rating": 4.6,
+      "description": "A reliable and smooth-writing pen designed for everyday writing. It offers comfortable handling, clear ink flow, and consistent performance for students, professionals, and daily note-taking.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYaZj1v8ZwsWdTe6OVptZNQYwPLeGp5caXrFa47_p0Nw&s",
+      "stock": 45,
+      "id": "9xhzdCwKqqo"
+    },
+    {
+      "name": "Cello Butterflow",
+      "type": "Stationery",
+      "category": "Pens",
+      "price": 100,
+      "rating": 4.2,
+      "description": "A smooth and comfortable ball pen designed for effortless everyday writing. It provides a consistent ink flow, comfortable grip, and neat writing experience, making it ideal for students, office work, and note-taking.\n",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fP7uE-I4FxdEhhzYH_68JxmVG-gIQtCnikZcYeI19Q&s=10",
+      "stock": 40,
+      "id": "SIgsuBBxQ3E"
+    },
+    {
+      "name": "Uni-ball Jestream",
+      "type": "Stationery",
+      "category": "Pens",
+      "price": 200,
+      "rating": 4.5,
+      "description": "A premium smooth-writing pen designed for comfortable and precise writing. It offers consistent ink flow, clear lines, and a reliable writing experience, making it suitable for students, professionals, and everyday use.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWj7vR0bYJEoM3ZhkcgLeNjAcXcqgtlN7YCYWKY-TdLg&s=10",
+      "stock": 30,
+      "id": "dI3KUYX_ezc"
+    },
+    {
+      "name": "Classmate Octane ",
+      "type": "Stationery",
+      "category": "Pens",
+      "price": 70,
+      "rating": 4.3,
+      "description": "A smooth and reliable ball pen designed for comfortable everyday writing. It provides a consistent ink flow, neat writing, and an ergonomic grip, making it a great choice for students, note-taking, and office work.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQntHpwzckUWGXx_9gfWLJCsfOPk_-nx3CarmyrqwjIhw&s=10",
+      "stock": 40,
+      "id": "DgCo2Ry9Zuo"
+    },
+    {
+      "name": "DOMS Neon ",
+      "type": "Stationery",
+      "category": "Pencils",
+      "price": 100,
+      "rating": 4.3,
+      "description": "A bright and durable pencil designed for smooth, comfortable writing and drawing. It offers good control and clear strokes, making it ideal for students, sketching, homework, and everyday use.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP_Q3O17NTmVkAUUoC6x0gdZJJot9SWjSoOHkWv6qkNA&s=10",
+      "stock": 50,
+      "id": "sJnKeh0EQi8"
+    },
+    {
+      "name": "Faber-Castel Grip Pencils",
+      "type": "Stationery",
+      "category": "Pencils",
+      "price": 150,
+      "rating": 4.5,
+      "description": "A high-quality pencil designed with a comfortable grip for better control and effortless writing. It produces smooth, clean strokes and is ideal for students, drawing, sketching, and everyday writing.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1hFd3iOig8E6twQYyKgpRRNR5Y_iT4N_2Jb8aBp2ZOA&s=10",
+      "stock": 50,
+      "id": "jMM5b4evaGA"
+    },
+    {
+      "name": "Apsara Absolute",
+      "type": "Stationery",
+      "category": "Pencils",
+      "price": 100,
+      "rating": 4.2,
+      "description": "A trusted everyday pencil known for smooth writing, clear strokes, and comfortable handling. It is ideal for students, note-taking, drawing, sketching, and general writing tasks.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdpuI1IkHzgtHTQRANTFZvH8zWnyzjmVo3RfLHSaPXcg&s=10",
+      "stock": 40,
+      "id": "cxBnhOVeF0Q"
+    },
+    {
+      "name": "Camil pencil",
+      "type": "Stationery",
+      "category": "Pencils",
+      "price": 50,
+      "rating": 4.3,
+      "description": "A reliable pencil designed for smooth and comfortable writing during exams and everyday academic work. It provides clear, consistent strokes and good control, making it suitable for students, practice, and note-taking.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZETRjttpk4XpkW2ZDIckVpYOgmi9WWF28sTNR8xNHWg&s=10",
+      "stock": 45,
+      "id": "fFVnB8mPQck"
+    },
+    {
+      "name": "Natraj pencil",
+      "type": "Stationery",
+      "category": "Pencils",
+      "price": 50,
+      "rating": 4.3,
+      "description": "A classic and reliable pencil designed for smooth writing, clear strokes, and comfortable handling. It is ideal for students, homework, drawing, sketching, and everyday writing.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsorL2nUXisHcctasaxXLTvGTq1TWGK6o5aAw3i-tpUQ&s",
+      "stock": 45,
+      "id": "3g9nw1CiiYk"
+    },
+    {
+      "name": "DOMS Colour Pens",
+      "type": "Stationery",
+      "category": "Colour Pens",
+      "price": 150,
+      "rating": 4.2,
+      "description": "Bright and smooth colour pencils designed for drawing, colouring, and creative activities. They provide rich colours and easy application, making them ideal for students, artists, and everyday colouring projects.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1PU9okK3GXvWNbwwQ-Ua-JApVtngbcEb0rF80J-nTPA&s=10",
+      "stock": 30,
+      "id": "4sYMWj0w1KQ"
+    },
+    {
+      "name": "Classmate Colour Pens",
+      "type": "Stationery",
+      "category": "Colour Pens",
+      "price": 150,
+      "rating": 4.4,
+      "description": "Bright and smooth-writing colour pens designed for creative writing, colouring, highlighting, and drawing. They offer vibrant colours and comfortable handling, making them ideal for students and creative projects.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfClsYzMZB39t8FhnsSDTWvI7Ba8EYF-Av44Zkf-WQqg&s=10",
+      "stock": 40,
+      "id": "UE1dJOzYDYs"
+    },
+    {
+      "name": "Faber-Castel Water Colors",
+      "type": "Stationery",
+      "category": "Art Supplies",
+      "price": 199,
+      "rating": 4.3,
+      "description": "High-quality water colours that provide bright, smooth, and vibrant shades for creative artwork. They are easy to blend and suitable for painting, school projects, crafts, and other artistic activities.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkQJG_dk0AY2hjiFo5HBjrLbAPcTsfbf0BQenseJ3IMA&s=10",
+      "stock": 40,
+      "id": "fbqw57ho4a8"
+    },
+    {
+      "name": "Fevicryl Water Colors",
+      "type": "Stationery",
+      "category": "Art Supplies",
+      "price": 199,
+      "rating": 4.5,
+      "description": "Vibrant and easy-to-use water colours designed for painting, crafts, school projects, and creative artwork. They offer smooth application and a variety of bright shades, making them suitable for students and art enthusiasts.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7EXSHaRgS6Cu3JaoY84Qo9M13fQ_lbXLxyCVmI5tFmQ&s=10",
+      "stock": 50,
+      "id": "xi2OM__kCL0"
+    },
+    {
+      "name": "Glitter Gel Pens",
+      "type": "Stationery",
+      "category": "Colour Pens",
+      "price": 110,
+      "rating": 4.5,
+      "description": "Sparkling and colourful pens designed to add a fun, decorative touch to writing, drawing, greeting cards, crafts, and creative projects. Perfect for students, artists, and anyone who loves colourful and eye-catching designs.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiwebAxsZTsFRyeHIO2WwnsAdTdrQQTzJBjgDOsUtLTQ&s=10",
+      "stock": 30,
+      "id": "Xk7bJbu7Hb8"
+    },
+    {
+      "name": "Navneet Drawing Book",
+      "type": "Stationery",
+      "category": "Art Supplies",
+      "price": 100,
+      "rating": 4,
+      "description": "A quality drawing book with smooth, spacious pages, perfect for drawing, colouring, sketching, and creative school projects. It is suitable for students and art enthusiasts for everyday practice and creativity.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCbNSUhUUoOeciz_DCpZCQw65Cd3mdcFlXm4rKqkBxw&s=10",
+      "stock": 30,
+      "id": "DbQw7M6Tu8I"
+    },
+    {
+      "name": "Creative Art Drawing Book",
+      "type": "Stationery",
+      "category": "Art Supplies",
+      "price": 100,
+      "rating": 4,
+      "description": "A fun and versatile drawing book designed to encourage creativity and imagination. Its spacious pages are ideal for drawing, colouring, sketching, doodling, and school art projects, making it perfect for children and beginners.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGInnhKXkE1dEsf78wSWkRBZ98htXpHCusMw_glQKPNQ&s=10",
+      "stock": 30,
+      "id": "pwvgHvClYwk"
     }
   ],
   "orders": [

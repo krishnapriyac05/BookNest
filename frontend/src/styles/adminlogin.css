@@ -1,37 +1,87 @@
+/* ==============================
+   PREMIUM ADMIN AUTH
+============================== */
+
 .admin-login-page {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f4f6f9;
   padding: 20px;
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(800px 480px at 20% 10%, rgba(56, 189, 248, 0.22), transparent 60%),
+    radial-gradient(800px 480px at 85% 90%, rgba(139, 92, 246, 0.26), transparent 60%),
+    linear-gradient(135deg, #070d1f 0%, #0f1b3d 50%, #131c4a 100%);
+}
+
+.admin-login-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  z-index: 0;
+  mask-image: radial-gradient(circle at 50% 40%, rgba(0, 0, 0, 0.6), transparent 75%);
+  -webkit-mask-image: radial-gradient(circle at 50% 40%, rgba(0, 0, 0, 0.6), transparent 75%);
 }
 
 .admin-login-card {
-  width: 400px;
-  background: white;
-  padding: 40px;
-  border-radius: 14px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  padding: 42px 38px;
+  border-radius: 22px;
+  box-shadow:
+    0 30px 70px rgba(2, 6, 23, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  animation: adminCardIn 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes adminCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .admin-login-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .admin-login-header h1 {
-  color: #2563eb;
   margin-bottom: 10px;
+  font-size: 34px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .admin-login-header h2 {
-  color: #1f2937;
+  color: #e2e8f0;
   margin-bottom: 8px;
+  font-size: 24px;
+  letter-spacing: -0.01em;
 }
 
 .admin-login-header p {
-  color: #6b7280;
+  color: #94a3b8;
+  font-size: 14px;
 }
 
 .form-group {
@@ -40,43 +90,69 @@
 
 .form-group label {
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   font-weight: 600;
-  color: #374151;
+  font-size: 13.5px;
+  color: #cbd5e1;
 }
 
 .form-group input {
   width: 100%;
   box-sizing: border-box;
-  padding: 12px;
-  border: 1px solid #d1d5db;
-  border-radius: 7px;
+  padding: 13px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
   font-size: 15px;
   outline: none;
+  color: #f1f5f9;
+  background: rgba(15, 23, 42, 0.55);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: rgba(148, 163, 184, 0.7);
 }
 
 .form-group input:focus {
-  border-color: #2563eb;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.16);
 }
 
 .admin-login-btn {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   border: none;
-  border-radius: 7px;
-  background: #2563eb;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0ea5e9, #8b5cf6);
   color: white;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   cursor: pointer;
+  box-shadow: 0 10px 26px rgba(14, 165, 233, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
 .admin-login-btn:hover {
-  background: #1d4ed8;
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(139, 92, 246, 0.45);
+}
+
+.admin-login-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.admin-login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .admin-error {
-  color: #dc2626;
+  color: #fca5a5;
   text-align: center;
   margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 600;
 }

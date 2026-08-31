@@ -1,9 +1,16 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import QuantityStepper from "../Components/QuantityStepper";
 import axios from "axios";
 import "../styles/stationery.css";
+import "../styles/books.css";
 
 const Stationery = () => {
+  const navigate = useNavigate();
+  const { category } = useParams();
+
+  const categoryName = category ? decodeURIComponent(category) : null;
+
   const [stationeryProducts, setStationeryProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -24,6 +31,18 @@ const Stationery = () => {
         setLoading(false);
       });
   }, []);
+
+  const categories = [
+    ...new Set(stationeryProducts.map((p) => p.category)),
+  ];
+
+  const activeCategory = categoryName || "All";
+
+  const filteredProducts = categoryName
+    ? stationeryProducts.filter(
+        (product) => product.category === categoryName
+      )
+    : stationeryProducts;
 
   if (loading) {
     return (
@@ -49,21 +68,49 @@ const Stationery = () => {
 
       <div className="stationery-header">
 
-        <h1>Stationery</h1>
+        <h1>{categoryName || "Stationery"}</h1>
 
         <p>
-          Explore our collection of notebooks, pens,
-          pencils and essential stationery products.
+          {categoryName
+            ? `Browse all ${categoryName} stationery available in our store.`
+            : `Explore our collection of notebooks, pens,
+              pencils and essential stationery products.`}
         </p>
 
       </div>
 
+      {/* Category Filters */}
+
+      <div className="category-filters">
+        <button
+          className={`filter-chip ${
+            activeCategory === "All" ? "active" : ""
+          }`}
+          onClick={() => navigate("/stationery")}
+        >
+          All
+        </button>
+
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            className={`filter-chip ${
+              activeCategory === cat ? "active" : ""
+            }`}
+            onClick={() =>
+              navigate(`/stationery/${encodeURIComponent(cat)}`)
+            }
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
 
       {/* Products */}
 
       <div className="stationery-container">
 
-        {stationeryProducts.length === 0 ? (
+        {filteredProducts.length === 0 ? (
 
           <div className="no-products">
             <h2>No Stationery Products Found</h2>
@@ -71,7 +118,7 @@ const Stationery = () => {
 
         ) : (
 
-          stationeryProducts.map((product) => (
+          filteredProducts.map((product) => (
 
             <div
               className="stationery-card"
@@ -89,7 +136,6 @@ const Stationery = () => {
 
               </div>
 
-
               {/* Details */}
 
               <div className="stationery-details">
@@ -97,6 +143,10 @@ const Stationery = () => {
                 <h2>
                   {product.name}
                 </h2>
+
+                <span className="book-category">
+                  {product.category}
+                </span>
 
                 <p className="description">
                   {product.description}

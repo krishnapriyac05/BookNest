@@ -6,7 +6,7 @@ import "../styles/books.css";
 const getCategoryLink = (category, type) =>
   type === "Book"
     ? `/category/${encodeURIComponent(category)}`
-    : "/stationery";
+    : `/stationery/${encodeURIComponent(category)}`;
 
 const CategorySection = ({ title, categories, type }) => (
   <div

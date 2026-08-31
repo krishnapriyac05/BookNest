@@ -1,15 +1,21 @@
+/* ==============================
+   PREMIUM UPDATE PRODUCT
+============================== */
+
 .admin-update-container {
-  max-width: 700px;
-  margin: 30px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 720px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #eef2f7;
+  padding: 34px;
+  border-radius: 18px;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
 }
 
 .admin-update-container h2 {
   color: #172554;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
+  letter-spacing: -0.02em;
 }
 
 .admin-update-form {
@@ -21,10 +27,19 @@
 .admin-update-form input,
 .admin-update-form select,
 .admin-update-form textarea {
-  padding: 12px;
-  border: 1px solid #cbd5e1;
-  border-radius: 7px;
+  padding: 13px 15px;
+  border: 1px solid #d5dce8;
+  border-radius: 11px;
   font-size: 15px;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.admin-update-form input:focus,
+.admin-update-form select:focus,
+.admin-update-form textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
 }
 
 .admin-update-form textarea {
@@ -33,15 +48,20 @@
 }
 
 .admin-update-form button {
-  padding: 12px;
+  padding: 14px;
   border: none;
-  border-radius: 7px;
-  background: #2563eb;
+  border-radius: 11px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: white;
   font-size: 15px;
+  font-weight: 700;
   cursor: pointer;
+  box-shadow: 0 10px 24px rgba(99, 102, 241, 0.32);
+  transition: transform 0.2s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
 .admin-update-form button:hover {
-  background: #1d4ed8;
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(139, 92, 246, 0.44);
 }
