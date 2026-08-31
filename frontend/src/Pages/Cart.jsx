@@ -23,14 +23,25 @@ const Cart = () => {
     pincode: "",
     address: "",
   });
+  const [paymentMethod, setPaymentMethod] = useState("online");
   const [placingOrder, setPlacingOrder] = useState(false);
   const [orderError, setOrderError] = useState("");
   const [orderPlaced, setOrderPlaced] = useState(false);
 
-  const total = cartItems.reduce(
+  const COD_DELIVERY_CHARGE = 50;
+  const FREE_DELIVERY_ABOVE = 500;
+
+  const subtotal = cartItems.reduce(
     (sum, item) => sum + item.price * item.quantity,
     0
   );
+
+  const isCOD = paymentMethod === "cod";
+
+  const deliveryCharge =
+    isCOD && subtotal < FREE_DELIVERY_ABOVE ? COD_DELIVERY_CHARGE : 0;
+
+  const total = subtotal + deliveryCharge;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -45,6 +56,7 @@ const Cart = () => {
   const closeCheckoutForm = () => {
     setShowCheckoutForm(false);
     setForm({ name: "", phone: "", pincode: "", address: "" });
+    setPaymentMethod("online");
   };
 
   const handlePlaceOrder = () => {
@@ -58,17 +70,29 @@ const Cart = () => {
       return;
     }
 
+    let loggedInUser = null;
+    try {
+      const storedUser = localStorage.getItem("loggedInUser");
+      loggedInUser = storedUser ? JSON.parse(storedUser) : null;
+    } catch {
+      loggedInUser = null;
+    }
+
     const orderData = {
+      userId: loggedInUser ? loggedInUser.id : null,
       customerName: form.name.trim(),
       phone: form.phone.trim(),
       pincode: form.pincode.trim(),
       address: form.address.trim(),
+      paymentMethod: isCOD ? "Cash on Delivery" : "Online Payment",
       items: cartItems.map((item) => ({
         id: item.id,
         name: item.name,
         price: item.price,
         quantity: item.quantity,
       })),
+      subtotal,
+      deliveryCharge,
       total,
       status: "Pending",
       date: new Date().toISOString(),
@@ -79,17 +103,47 @@ const Cart = () => {
 
     axios
       .post("http://localhost:5000/orders", orderData)
+      .then((response) => {
+        const savedOrder = response.data;
+
+        if (loggedInUser && loggedInUser.id) {
+          const orderForUser = {
+            id: savedOrder.id || new Date().getTime().toString(),
+            items: orderData.items,
+            subtotal: orderData.subtotal,
+            deliveryCharge: orderData.deliveryCharge,
+            total: orderData.total,
+            paymentMethod: orderData.paymentMethod,
+            status: orderData.status,
+            date: orderData.date,
+          };
+
+          return axios
+            .get(`http://localhost:5000/users/${loggedInUser.id}`)
+            .then((userResponse) => {
+              const currentOrders = Array.isArray(userResponse.data.orders)
+                ? userResponse.data.orders
+                : [];
+              return axios.patch(`http://localhost:5000/users/${loggedInUser.id}`, {
+                orders: [...currentOrders, orderForUser],
+              });
+            });
+        }
+
+        return Promise.resolve();
+      })
       .then(() => {
         dispatch(clearCart());
         setPlacingOrder(false);
         setShowCheckoutForm(false);
         setOrderPlaced(true);
         setForm({ name: "", phone: "", pincode: "", address: "" });
+        setPaymentMethod("online");
       })
       .catch(() => {
         setPlacingOrder(false);
         setOrderError(
-          "Could not place the order. Make sure JSON Server is running on port 3000."
+          "Could not place the order. Make sure JSON Server is running."
         );
       });
   };
@@ -165,8 +219,26 @@ const Cart = () => {
             </div>
 
             <div className="cart-summary">
-              <div className="total">
-                Total: ₹{total}
+              <div className="summary-details">
+                <div className="summary-row">
+                  <span>Subtotal</span>
+                  <span>₹{subtotal}</span>
+                </div>
+                <div className="summary-row">
+                  <span>Delivery Charges</span>
+                  <span>{deliveryCharge > 0 ? `₹${deliveryCharge}` : "FREE"}</span>
+                </div>
+                <div className="summary-row grand-total">
+                  <span>Total</span>
+                  <span>₹{total}</span>
+                </div>
+                {isCOD && subtotal < FREE_DELIVERY_ABOVE && (
+                  <p className="cod-note">
+                    Cash on Delivery includes ₹{COD_DELIVERY_CHARGE} delivery
+                    charge. Free delivery on orders above ₹
+                    {FREE_DELIVERY_ABOVE}.
+                  </p>
+                )}
               </div>
 
               <div style={{ display: "flex", gap: "10px" }}>
@@ -238,6 +310,58 @@ const Cart = () => {
                 rows="3"
               />
             </label>
+
+            <div className="payment-methods">
+              <p className="payment-title">Payment Method</p>
+
+              <label className="payment-option selected">
+                <input
+                  type="radio"
+                  name="paymentMethod"
+                  value="online"
+                  checked={paymentMethod === "online"}
+                  onChange={() => setPaymentMethod("online")}
+                />
+                <div>
+                  <strong>Online Payment</strong>
+                  <span>Pay securely by UPI, card or net banking</span>
+                </div>
+              </label>
+
+              <label className="payment-option">
+                <input
+                  type="radio"
+                  name="paymentMethod"
+                  value="cod"
+                  checked={paymentMethod === "cod"}
+                  onChange={() => setPaymentMethod("cod")}
+                />
+                <div>
+                  <strong>Cash on Delivery</strong>
+                  <span>
+                    Pay in cash at your door + ₹{COD_DELIVERY_CHARGE} delivery
+                    charge
+                  </span>
+                </div>
+              </label>
+            </div>
+
+            <div className="order-summary">
+              <div className="summary-row">
+                <span>Subtotal</span>
+                <span>₹{subtotal}</span>
+              </div>
+              <div className="summary-row">
+                <span>Delivery Charges</span>
+                <span>
+                  {deliveryCharge > 0 ? `₹${deliveryCharge}` : "FREE"}
+                </span>
+              </div>
+              <div className="summary-row grand-total">
+                <span>Total Payable</span>
+                <span>₹{total}</span>
+              </div>
+            </div>
 
             {orderError && <div className="checkout-error">{orderError}</div>}
 

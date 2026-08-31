@@ -1,11 +1,14 @@
 ﻿import React, { useEffect, useRef, useState } from "react";
+import { useDispatch } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { syncCart } from "../Redux/CartSlice";
 import "../styles/nav.css";
 
 const Nav = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const dispatch = useDispatch();
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -21,13 +24,15 @@ const Nav = () => {
     const loggedInAdmin = localStorage.getItem("loggedInAdmin");
 
     setIsLoggedIn(Boolean(loggedInUser || loggedInAdmin));
+    dispatch(syncCart());
   }, [location]);
 
   const handleLogout = () => {
     localStorage.removeItem("loggedInUser");
     localStorage.removeItem("loggedInAdmin");
     setIsLoggedIn(false);
-    navigate("/home");
+    dispatch(syncCart());
+    navigate("/register");
   };
 
   const loadProducts = () => {
@@ -157,6 +162,8 @@ const Nav = () => {
         </div>
 
         <Link to="/cart">🛒 Cart</Link>
+
+        <Link to="/my-orders">📦 My Orders</Link>
 
         {isLoggedIn ? (
           <Link to="/profile">👤 Profile</Link>

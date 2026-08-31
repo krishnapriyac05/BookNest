@@ -1,0 +1,198 @@
+.myorders-page {
+  min-height: 100vh;
+  padding: 30px 50px;
+  background-color: #f5f7fb;
+}
+
+.myorders-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.myorders-header h1 {
+  font-size: 34px;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.myorders-header p {
+  color: #6b7280;
+}
+
+.myorders-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.myorders-message {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.myorders-note,
+.myorders-empty {
+  text-align: center;
+  color: #94a3b8;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.myorders-empty h2 {
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.myorders-shop-btn {
+  display: inline-block;
+  margin-top: 18px;
+  background: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.myorders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.myorder-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.myorder-card-header,
+.myorder-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myorder-card-header {
+  margin-bottom: 10px;
+}
+
+.myorder-date {
+  font-size: 13px;
+  color: #6b7280;
+  margin-right: 10px;
+}
+
+.myorder-id {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.myorder-status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-processing {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-shipped {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.status-delivered {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-cancelled {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.myorder-items {
+  border-top: 1px solid #f1f5f9;
+  border-bottom: 1px solid #f1f5f9;
+  padding: 8px 0;
+  margin-bottom: 12px;
+}
+
+.myorder-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 4px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.myorder-item-name {
+  flex: 1;
+}
+
+.myorder-item-qty {
+  color: #6b7280;
+}
+
+.myorder-item-price {
+  font-weight: 600;
+  color: #111827;
+  min-width: 60px;
+  text-align: right;
+}
+
+.myorder-card-footer {
+  font-size: 14px;
+  color: #6b7280;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.myorder-card-footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.myorder-total {
+  font-weight: bold;
+  font-size: 17px;
+  color: #172554;
+}
+
+.myorder-cancel-btn {
+  background: #b91c1c;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.myorder-cancel-btn:hover {
+  background: #991b1b;
+}
+
+.myorder-noncancel {
+  font-size: 12px;
+  color: #94a3b8;
+}

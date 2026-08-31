@@ -1,10 +1,13 @@
 ﻿import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { syncCart } from "../Redux/CartSlice";
 import "../styles/login.css";
 
 const Login = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -57,6 +60,8 @@ const Login = () => {
 
             alert("Admin login successful!");
 
+            dispatch(syncCart());
+
             // Stay on the admin dashboard
             navigate("/admin/dashboard");
           } else if (user) {
@@ -70,6 +75,8 @@ const Login = () => {
             );
 
             alert("Login successful!");
+
+            dispatch(syncCart());
 
             // Navigate to home
             navigate("/home");

@@ -7,6 +7,7 @@ import Categories from "./Pages/Categories";
 import CategoryBooks from "./Pages/CategoryBooks";
 import Cart from "./Pages/Cart";
 import Profile from "./Pages/Profile";
+import MyOrders from "./Pages/MyOrders";
 
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
@@ -106,6 +107,15 @@ const AllRoutes = () => {
         element={
           <ProtectedRoute>
             <Profile />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/my-orders"
+        element={
+          <ProtectedRoute>
+            <MyOrders />
           </ProtectedRoute>
         }
       />

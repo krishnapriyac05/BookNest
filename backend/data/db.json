@@ -9,7 +9,26 @@
       "dob": "2003-05-15",
       "address": "Hyderabad",
       "password": "Krishna@123",
-      "role": "user"
+      "role": "user",
+      "orders": [
+        {
+          "id": "eAV6_tDQx50",
+          "items": [
+            {
+              "id": "6",
+              "name": "Shiva Koti ",
+              "price": 350,
+              "quantity": 2
+            }
+          ],
+          "subtotal": 700,
+          "deliveryCharge": 0,
+          "total": 700,
+          "paymentMethod": "Online Payment",
+          "status": "Pending",
+          "date": "2026-08-31T15:57:51.819Z"
+        }
+      ]
     },
     {
       "name": "krishnapriya",
@@ -28,6 +47,34 @@
       "password": "krishna@123",
       "id": "Y_m2pkN_DgI",
       "role": "admin"
+    },
+    {
+      "name": "Ajay",
+      "email": "ajay@gmail.com",
+      "phone": "9876123405",
+      "address": "hyderabad",
+      "password": "Ajay@05",
+      "role": "user",
+      "id": "nIjYuUyTvzw",
+      "orders": [
+        {
+          "id": "TwKb6E6hJhE",
+          "items": [
+            {
+              "id": "6",
+              "name": "Shiva Koti ",
+              "price": 350,
+              "quantity": 2
+            }
+          ],
+          "subtotal": 700,
+          "deliveryCharge": 0,
+          "total": 700,
+          "paymentMethod": "Online Payment",
+          "status": "Pending",
+          "date": "2026-08-31T16:08:29.341Z"
+        }
+      ]
     }
   ],
   "admin": [
@@ -467,18 +514,7 @@
       "rating": 4.6,
       "stock": 45,
       "description": "A practical workbook packed with solved examples and exercises for daily practice.",
-      "image": "https://images.pexels.com/photos/6237957/pexels-photo-6237957.jpeg?auto=compress&cs=tinysrgb&w=700"
-    },
-    {
-      "id": "47",
-      "name": "Integrated Science for High School",
-      "type": "Book",
-      "category": "Academic Books",
-      "price": 329,
-      "rating": 4.7,
-      "stock": 35,
-      "description": "An integrated study of physics, chemistry and biology designed for high school.",
-      "image": "https://images.pexels.com/photos/35871049/pexels-photo-35871049.jpeg?auto=compress&cs=tinysrgb&w=700"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH4RbsUNqoD7A5jMXNtzAAUjHEBZt7Tjq1k2doMKryXg&s=10"
     },
     {
       "id": "48",
@@ -545,28 +581,6 @@
       "stock": 25,
       "description": "Timeless advice to replace fear with courage and doubt with lasting confidence.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVGlybkxP_7utSAuQQP-8btHFK1EHxT8sZluHZI5Z3ng&s"
-    },
-    {
-      "id": "56",
-      "name": "Pride and Prejudice",
-      "type": "Book",
-      "category": "Novels & Literature",
-      "price": 299,
-      "rating": 4.9,
-      "stock": 30,
-      "description": "Jane Austen's beloved classic of love, wit and social manners in Regency England.",
-      "image": "https://images.pexels.com/photos/4216041/pexels-photo-4216041.jpeg?auto=compress&cs=tinysrgb&w=700"
-    },
-    {
-      "id": "57",
-      "name": "The Secret Garden",
-      "type": "Book",
-      "category": "Novels & Literature",
-      "price": 249,
-      "rating": 4.8,
-      "stock": 25,
-      "description": "A heartwarming classic about friendship, nature and the magic of a hidden garden.",
-      "image": "https://images.pexels.com/photos/38692765/pexels-photo-38692765.jpeg?auto=compress&cs=tinysrgb&w=700"
     },
     {
       "id": "58",
@@ -1020,13 +1034,13 @@
       "id": "g4"
     },
     {
-      "name": "Dragon Sticker Labels",
+      "name": "Doremon Sticker Labels",
       "type": "Stationery",
       "category": "Labels & Book Covers",
-      "price": 20,
+      "price": 50,
       "rating": 4.5,
-      "description": "Fun dragon-themed sticker labels to personalize books, notebooks and water bottles.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGInnhKXkE1dEsf78wSWkRBZ98htXpHCusMw_glQKPNQ&s=10",
+      "description": "Fun doremon-themed sticker labels to personalize books, notebooks and water bottles.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsph0eVsR7zeBGT5R24zB8QKqp2ycI6hX4JtB2ST5jWQ&s=10",
       "stock": 90,
       "id": "g5"
     },
@@ -1034,10 +1048,10 @@
       "name": "Shin Chan Sticker Labels",
       "type": "Stationery",
       "category": "Labels & Book Covers",
-      "price": 20,
+      "price": 50,
       "rating": 4.6,
       "description": "Colourful Shin Chan character sticker labels to decorate and identify school books.",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2oga6q0cNPzAZP8PekfluBh3V8-E5IYpwnZhzLnmtKQ&s=10",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkPDusciYeNBOCADC9ZX8ReTARELxSgTcMMl6GE8nPcw&s=10",
       "stock": 85,
       "id": "g6"
     },
@@ -1220,13 +1234,277 @@
     {
       "name": "Chart Papers",
       "type": "Stationery",
-      "category": "Papers",
+      "category": "Charts",
       "price": 100,
       "rating": 4.2,
       "description": "High-quality, versatile paper ideal for school projects, posters, presentations, drawing, colouring, and creative artwork. Its smooth surface makes it easy to write, draw, and decorate, making it perfect for students and craft activities.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrDl6M4Kr9uGTWqe_4WQNA9jQCjjErfEsUeWWKofLVbQ&s=10",
       "stock": 55,
       "id": "7bN8a4Zlbfk"
+    },
+    {
+      "name": "Graph Book",
+      "type": "Stationery",
+      "category": "Papers",
+      "price": 50,
+      "rating": 4.5,
+      "description": "A specially designed notebook with neatly printed graph grids, ideal for mathematics, data plotting, geometry, charts, and technical work. It is perfect for students to practice graphs, coordinate geometry, and other academic exercises.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNhnsFsiyB6a_55ni4jQhGPhfMEnZiOHp7PR7EJQUjJQ&s=10",
+      "stock": 55,
+      "id": "eBVG_95wGp0"
+    },
+    {
+      "name": "Natraj Sharpner",
+      "type": "Stationery",
+      "category": "School Accessories",
+      "price": 10,
+      "rating": 4.5,
+      "description": "A durable and easy-to-use stationery essential designed to sharpen pencils smoothly and neatly. It helps maintain a fine pencil tip for precise writing, drawing, and sketching, making it ideal for students and everyday use.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJaUxTNAlVBjwD9wr3SW-At3K5wYs-nltXLMA4be1glQ&s=10",
+      "stock": 120,
+      "id": "4E_Ow1_7KvU"
+    },
+    {
+      "name": "Stapler",
+      "type": "Stationery",
+      "category": "School Accessories",
+      "price": 75,
+      "rating": 4.5,
+      "description": "A compact and durable stationery tool designed for securely fastening papers and documents. It is easy to handle and ideal for students, school projects, office work, and everyday paper organization.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS90PUGgq8a6JhKwdR4xyz5CM6_JuZDdMzL_C_fqCpq-Q&s=10",
+      "stock": 100,
+      "id": "1WIDWP4jomQ"
+    },
+    {
+      "name": "Stapler Pins",
+      "type": "Stationery",
+      "category": "School Accessories",
+      "price": 50,
+      "rating": 4.5,
+      "description": "Strong and reliable metal pins designed for securely fastening sheets of paper. They are compatible with standard staplers and are ideal for school projects, assignments, office documents, and everyday paper organization.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxE97X58cwDnELKJvXp_9LgMMJCQCPHFTVp5iZgGrBhw&s=10",
+      "stock": 100,
+      "id": "owhmsmVm5p0"
+    },
+    {
+      "name": "Office File Holder combo",
+      "type": "Stationery",
+      "category": "Office Supplies",
+      "price": 200,
+      "rating": 4.6,
+      "description": "A durable and practical folder designed to organize and protect important documents, reports, papers, and files. It is ideal for offices, students, and professional use, helping keep documents neat, secure, and easily accessible.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXgFtLua-KmQDUe7TUCcsaJ7ItXQEB8k5yC1JMYHrWoQ&s",
+      "stock": 120,
+      "id": "cNCIbeYKMJQ"
+    },
+    {
+      "name": "File Folder ",
+      "type": "Stationery",
+      "category": "School Accessories",
+      "price": 75,
+      "rating": 4.2,
+      "description": "A lightweight and durable folder designed to store and organize documents, papers, assignments, certificates, and office files. Its flap closure helps keep documents secure and protected, making it suitable for students, offices, and everyday document organization.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Xv3HabG00hWMAs_QwQLfvnlw1KyukfMPtrL6wfIJTA&s=10",
+      "stock": 100,
+      "id": "RPjsLJQPVPg"
+    },
+    {
+      "name": "Rapesco Pencil Sharpener",
+      "type": "Stationery",
+      "category": "School Accessories",
+      "price": 35,
+      "rating": 4.7,
+      "description": "A compact and durable manual pencil sharpener designed for smooth and precise pencil sharpening. Its sturdy design makes it suitable for students, classrooms, offices, and everyday use.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCmfRBRe8NLeTm-APNJyu8O1HRZszbqvCvg63KtzsLkg&s=10",
+      "stock": 120,
+      "id": "FALN8AEREYI"
+    },
+    {
+      "name": "Space-Themed Pencil Box",
+      "type": "Stationery",
+      "category": "School Accessories",
+      "price": 249,
+      "rating": 4.5,
+      "description": "A fun and practical storage box designed to keep pencils, pens, erasers, sharpeners, and other small stationery items neatly organized. Its attractive space-themed design makes it a great choice for school children and everyday use.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVMGQjYzJ7BFUlF5ScsL5bXa7DPCRja3YGBLKXO2H9cQ&s",
+      "stock": 150,
+      "id": "3g5WV0GLc1M"
+    },
+    {
+      "name": "Magic World Multi-Compartment Pencil Box",
+      "type": "Stationery",
+      "category": "School Accessories",
+      "price": 250,
+      "rating": 4.5,
+      "description": "A spacious and attractive pencil box designed to organize pens, pencils, erasers, sharpeners, rulers, and other small stationery items. Its multiple compartments and fun design make it ideal for school students and everyday use.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrmN_7dXROiqWYhhXlo9XiP0-hpS7yFSB2bPd_260_8w&s=10",
+      "stock": 100,
+      "id": "Aqb7JD29v7c"
+    },
+    {
+      "name": "Princess Kids School Stationery Kit",
+      "type": "Stationery",
+      "category": "School Supplies",
+      "price": 1499,
+      "rating": 4.5,
+      "description": "A colourful and attractive school essentials set featuring a kids' backpack along with stationery accessories such as a pencil case, colouring supplies, writing tools, and other school essentials. Perfect for children and ideal for school, gifting, and everyday use.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmscqbYWH9gW9uLhzoIRLxZin_p0yPw9a4G6T4Daw5Xw&s=10",
+      "stock": 120,
+      "id": "cpGGjrf7qP4"
+    },
+    {
+      "name": "Cute Double-Zip Pencil Pouch",
+      "type": "Stationery",
+      "category": "School Accessories",
+      "price": 149,
+      "rating": 4.5,
+      "description": "A stylish and spacious pencil pouch designed to keep pens, pencils, erasers, sharpeners, and other stationery items neatly organized. Its cute face design and double-zip compartments make it ideal for students and everyday use.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5lVDLsdJHxjFOFn-FHvFqNjqjJlvTfWbpbbSoeOCLXQ&s=10",
+      "stock": 55,
+      "id": "aGEu1DyuNQM"
+    },
+    {
+      "name": "Aesthetic Zipper Pencil Pouch",
+      "type": "Stationery",
+      "category": "School Accessories",
+      "price": 149,
+      "rating": 4.4,
+      "description": "A stylish and lightweight pencil pouch designed to keep pens, pencils, erasers, sharpeners, and other stationery essentials neatly organized. Its spacious design and secure zipper make it perfect for students, office use, and everyday carrying.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5fsJlfSY1IixrBkvhdGDyYXYcLGWnToT3SqITWZ_eGQ&s=10",
+      "stock": 60,
+      "id": "N5DdGDT9u7c"
+    },
+    {
+      "name": "Stapler",
+      "type": "Stationery",
+      "category": "Office Supplies",
+      "price": 75,
+      "rating": 4.5,
+      "description": "A compact and durable stationery tool designed for securely fastening papers and documents. It is easy to use, comfortable to handle, and suitable for organizing papers, assignments, reports, and office documents. Its sturdy construction ensures reliable performance for everyday school and office use.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzAkgyN3Ymve_IhSJm-ntZj_cFpVZIIIjZ2LSxqOg2oQ&s=10",
+      "stock": 120,
+      "id": "tM7BGQs06Yc"
+    },
+    {
+      "name": "Stapler Pins",
+      "type": "Stationery",
+      "category": "Office Supplies",
+      "price": 200,
+      "rating": 4.5,
+      "description": "High-quality staples designed for securely fastening papers and documents. They are suitable for standard staplers and ideal for school assignments, office paperwork, reports, and everyday document organization.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxE97X58cwDnELKJvXp_9LgMMJCQCPHFTVp5iZgGrBhw&s=10",
+      "stock": 100,
+      "id": "5w5HieEzw1w"
+    },
+    {
+      "name": "Casio Desktop Calculator",
+      "type": "Stationery",
+      "category": "Office Supplies",
+      "price": 200,
+      "rating": 4.5,
+      "description": "A practical and reliable calculator designed for quick and accurate calculations. It features a clear display, easy-to-use keys, and useful functions, making it ideal for students, offices, businesses, accounting, and everyday calculations.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU0zHEzvwcX2T-V2iJLboFCqsdPfH6IT8VlYsb0uuNgA&s=10",
+      "stock": 120,
+      "id": "AwnrNxl_GE8"
+    },
+    {
+      "name": "Paper Punch",
+      "type": "Stationery",
+      "category": "Office Supplies",
+      "price": 149,
+      "rating": 4.2,
+      "description": "A sturdy and easy-to-use paper punch designed for creating clean, precise holes in documents. Its durable construction and comfortable handle make it ideal for organizing papers, files, reports, and office documents.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6wuw797dV1hO4WZKT0mRAOmC3HY3EenTUWz6qgupyNw&s=10",
+      "stock": 55,
+      "id": "G4qKh3Qt6bY"
+    },
+    {
+      "name": "Paper Punch",
+      "type": "Stationery",
+      "category": "School Accessories",
+      "price": 149,
+      "rating": 4.2,
+      "description": "A sturdy and easy-to-use paper punch designed for creating clean, precise holes in documents. Its durable construction and comfortable handle make it ideal for organizing papers, files, reports, and office documents.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6wuw797dV1hO4WZKT0mRAOmC3HY3EenTUWz6qgupyNw&s=10",
+      "stock": 55,
+      "id": "tLiPpDDcYd0"
+    },
+    {
+      "name": "Office Scissors",
+      "type": "Stationery",
+      "category": "Office Supplies",
+      "price": 70,
+      "rating": 4.2,
+      "description": "A durable and sharp pair of scissors designed for smooth and precise cutting of paper, documents, crafts, and other lightweight materials. Its comfortable handle makes it easy to use for school, office, and everyday stationery needs.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS-f0YOGc7ZIlUUILD-urSv_WZp5epB56lDfaiHaRk-w&s",
+      "stock": 100,
+      "id": "2DWpgMQFmdg"
+    },
+    {
+      "name": "Kids School Scissors",
+      "type": "Stationery",
+      "category": "School Accessories",
+      "price": 75,
+      "rating": 4.2,
+      "description": "A lightweight and comfortable pair of scissors designed for safe and easy cutting of paper, worksheets, craft materials, and school projects. The ergonomic handles provide a comfortable grip, making them suitable for students and everyday classroom activities.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIPxFePDgBeQk6Qbo0w6FFMLGzk9VNdlJDYecGGZ88g&s=10",
+      "stock": 100,
+      "id": "sMo4J2MRim0"
+    },
+    {
+      "name": "Ocean Wave Glass Paperweight",
+      "type": "Stationery",
+      "category": "Office Supplies",
+      "price": 250,
+      "rating": 4.5,
+      "description": "A beautiful decorative desk accessory featuring an artistic ocean-wave design enclosed in clear glass. It adds an attractive touch to study tables, office desks, and workspaces while also keeping papers neatly in place.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO2aFWyxAsOnFdPyxZvC1-O1f25s31JblNp2go2OeJMQ&s=10",
+      "stock": 90,
+      "id": "G09sHV-UTew"
+    },
+    {
+      "name": "DOMS Water Colour Pens",
+      "type": "Stationery",
+      "category": "Colour Pens",
+      "price": 100,
+      "rating": 4.5,
+      "description": "A colourful set of 12 water-based pens designed for creative drawing, colouring, lettering, and school art projects. They provide bright colours and smooth application, making them ideal for children, students, and creative activities.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8X4jMS3HR92i7V_aPTH-xyMHabi1rcrOMr_LC8RCiXg&s=10",
+      "stock": 120,
+      "id": "5tKji38B7rg"
+    },
+    {
+      "name": "Mickey Mouse School Name Labels",
+      "type": "Stationery",
+      "category": "Labels & Book Covers",
+      "price": 50,
+      "rating": 4.2,
+      "description": "Cute and colourful labels designed to personalize notebooks, books, pencil boxes, lunch boxes, and other school belongings. The fun Mickey Mouse design makes them attractive for children while helping easily identify their items.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeR0Q6PlK1tjJfiJtu2bc7Hma8ZUhKe1izlUfOyZWBFQ&s=10",
+      "stock": 60,
+      "id": "vIdem2b8ez4"
+    },
+    {
+      "name": "Harry Potter and the Philosopher's Stone",
+      "type": "Book",
+      "category": "Novels & Literature",
+      "price": 250,
+      "rating": 4.5,
+      "description": "A magical fantasy novel that follows Harry as he discovers his wizarding heritage and begins his journey at Hogwarts School of Witchcraft and Wizardry. Filled with friendship, adventure, mystery, and magic, it is a captivating read for young readers and fantasy lovers.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5JcybilYAP7YkoQ__zEK5XzVkuzaBHsPV1A-WZWckwg&s=10",
+      "stock": 55,
+      "id": "mYhDD9xYnSw"
+    },
+    {
+      "name": "The White Tiger",
+      "type": "Book",
+      "category": "Novels & Literature",
+      "price": 149,
+      "rating": 4.2,
+      "description": "A powerful and thought-provoking novel that follows Balram Halwai’s journey from a poor village life to becoming a successful entrepreneur. The story explores ambition, social inequality, class, and the pursuit of freedom in modern India.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlh5YOnFBQlPrpM-dMm82hO-ELLL19P1fKCZDDxY8YtA&s=10",
+      "stock": 33,
+      "id": "znel2rz78ws"
     }
   ],
   "orders": [
@@ -1280,6 +1558,77 @@
       "status": "Delivered",
       "date": "2026-08-30T13:08:26.663Z",
       "id": "ESmBzT2ScwQ"
+    },
+    {
+      "customerName": "Ajay",
+      "phone": "9876512340",
+      "pincode": "123456",
+      "address": "hyderabad",
+      "paymentMethod": "Online Payment",
+      "items": [
+        {
+          "id": "cNCIbeYKMJQ",
+          "name": "Office File Holder combo",
+          "price": 200,
+          "quantity": 1
+        },
+        {
+          "id": "28",
+          "name": "Sticky Notes Pack",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 300,
+      "deliveryCharge": 0,
+      "total": 300,
+      "status": "Processing",
+      "date": "2026-08-31T15:44:09.871Z",
+      "id": "qW2AnXVfNqU"
+    },
+    {
+      "userId": "1",
+      "customerName": "mittu",
+      "phone": "9876123405",
+      "pincode": "123456",
+      "address": "hyderabad",
+      "paymentMethod": "Online Payment",
+      "items": [
+        {
+          "id": "6",
+          "name": "Shiva Koti ",
+          "price": 350,
+          "quantity": 2
+        }
+      ],
+      "subtotal": 700,
+      "deliveryCharge": 0,
+      "total": 700,
+      "status": "Processing",
+      "date": "2026-08-31T15:57:51.819Z",
+      "id": "eAV6_tDQx50"
+    },
+    {
+      "userId": "nIjYuUyTvzw",
+      "customerName": "Ajay",
+      "phone": "9876123405",
+      "pincode": "123456",
+      "address": "hyderabad",
+      "paymentMethod": "Online Payment",
+      "items": [
+        {
+          "id": "6",
+          "name": "Shiva Koti ",
+          "price": 350,
+          "quantity": 2
+        }
+      ],
+      "subtotal": 700,
+      "deliveryCharge": 0,
+      "total": 700,
+      "status": "Pending",
+      "date": "2026-08-31T16:08:29.341Z",
+      "id": "TwKb6E6hJhE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

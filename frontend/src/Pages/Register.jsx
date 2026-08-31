@@ -52,6 +52,7 @@ const Register = () => {
           phone,
           address,
           password,
+          role: "user",
         };
 
         return axios.post(
