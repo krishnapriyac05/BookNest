@@ -86,7 +86,7 @@ const Cart = () => {
     let loggedInUser = null;
     try {
       const storedUser = localStorage.getItem("loggedInUser");
-      loggedInUser = storedUser ? JSON.parse(storedUser) : null;
+      if (storedUser) loggedInUser = JSON.parse(storedUser);
     } catch {
       loggedInUser = null;
     }
@@ -116,35 +116,6 @@ const Cart = () => {
 
     axios
       .post("http://localhost:5000/orders", orderData)
-      .then((response) => {
-        const savedOrder = response.data;
-
-        if (loggedInUser && loggedInUser.id) {
-          const orderForUser = {
-            id: savedOrder.id || new Date().getTime().toString(),
-            items: orderData.items,
-            subtotal: orderData.subtotal,
-            deliveryCharge: orderData.deliveryCharge,
-            total: orderData.total,
-            paymentMethod: orderData.paymentMethod,
-            status: orderData.status,
-            date: orderData.date,
-          };
-
-          return axios
-            .get(`http://localhost:5000/users/${loggedInUser.id}`)
-            .then((userResponse) => {
-              const currentOrders = Array.isArray(userResponse.data.orders)
-                ? userResponse.data.orders
-                : [];
-              return axios.patch(`http://localhost:5000/users/${loggedInUser.id}`, {
-                orders: [...currentOrders, orderForUser],
-              });
-            });
-        }
-
-        return Promise.resolve();
-      })
       .then(() => {
         dispatch(clearCart());
         setPlacingOrder(false);

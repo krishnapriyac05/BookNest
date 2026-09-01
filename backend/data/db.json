@@ -9,26 +9,7 @@
       "dob": "2003-05-15",
       "address": "Hyderabad",
       "password": "Krishna@123",
-      "role": "user",
-      "orders": [
-        {
-          "id": "eAV6_tDQx50",
-          "items": [
-            {
-              "id": "6",
-              "name": "Shiva Koti ",
-              "price": 350,
-              "quantity": 2
-            }
-          ],
-          "subtotal": 700,
-          "deliveryCharge": 0,
-          "total": 700,
-          "paymentMethod": "Online Payment",
-          "status": "Pending",
-          "date": "2026-08-31T15:57:51.819Z"
-        }
-      ]
+      "role": "user"
     },
     {
       "name": "krishnapriya",
@@ -55,26 +36,7 @@
       "address": "hyderabad",
       "password": "Ajay@05",
       "role": "user",
-      "id": "nIjYuUyTvzw",
-      "orders": [
-        {
-          "id": "TwKb6E6hJhE",
-          "items": [
-            {
-              "id": "6",
-              "name": "Shiva Koti ",
-              "price": 350,
-              "quantity": 2
-            }
-          ],
-          "subtotal": 700,
-          "deliveryCharge": 0,
-          "total": 700,
-          "paymentMethod": "Online Payment",
-          "status": "Pending",
-          "date": "2026-08-31T16:08:29.341Z"
-        }
-      ]
+      "id": "nIjYuUyTvzw"
     }
   ],
   "admin": [
@@ -100,7 +62,7 @@
     },
     {
       "id": "2",
-      "name": " The Ant and the Grasshopper ",
+      "name": "The Ant and the Grasshopper",
       "type": "Book",
       "category": "Moral Stories",
       "price": 200,
@@ -122,13 +84,13 @@
     },
     {
       "id": "4",
-      "name": "The Selfish Gaint",
+      "name": "The Selfish Giant",
       "type": "Book",
       "category": "Moral Stories",
       "price": 249,
       "rating": 4.5,
       "stock": 28,
-      "description": "**Description:** A touching story about a selfish giant who learns the value of **kindness, sharing, and love**.\n",
+      "description": "A touching story about a selfish giant who learns the value of kindness, sharing, and love.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPkaSYZoLgQBCKm3vXC_Njduw-X1JN_YiFRBUkvRNKHg&s=10"
     },
     {
@@ -139,12 +101,12 @@
       "price": 299,
       "rating": 4.8,
       "stock": 20,
-      "description": "An ancient Hindu scripture that narrates the stories, teachings, and divine glory of Lord Shiva.\n",
+      "description": "An ancient Hindu scripture that narrates the stories, teachings, and divine glory of Lord Shiva.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ87CvQ9S_dsv6Ixx0oPt5-74HECYgkRx7YcHXzjUHUQ&s=10"
     },
     {
       "id": "6",
-      "name": "Shiva Koti ",
+      "name": "Shiva Koti",
       "type": "Book",
       "category": "Spiritual & Religious",
       "price": 350,
@@ -172,18 +134,18 @@
       "price": 399,
       "rating": 4.8,
       "stock": 20,
-      "description": "A devotional prayer dedicated to Lord Hanuman, praising his strength, devotion, courage, and divine qualities\n",
+      "description": "A devotional prayer dedicated to Lord Hanuman, praising his strength, devotion, courage, and divine qualities",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJh_1_kf4bgkrk5XfxhzWQsrEdLAmn6QwcQOy3WzzPFA&s=10"
     },
     {
       "id": "9",
-      "name": "Govinda koti  nama",
+      "name": "Govinda Koti Nama",
       "type": "Book",
       "category": "Spiritual & Religious",
       "price": 250,
       "rating": 4.5,
       "stock": 50,
-      "description": "A devotional collection celebrating Lord Govinda through sacred names, prayers, and chants that inspire faith and inner peace.\n",
+      "description": "A devotional collection celebrating Lord Govinda through sacred names, prayers, and chants that inspire faith and inner peace.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJqGj4__iC09CDrMbHuqiFD1oI3UtIMfTd2HRz9tw6rQ&s"
     },
     {
@@ -194,7 +156,7 @@
       "price": 399,
       "rating": 4.6,
       "stock": 25,
-      "description": "A practical guide that teaches seven powerful habits for personal growth, effective communication, and achieving success.\n",
+      "description": "A practical guide that teaches seven powerful habits for personal growth, effective communication, and achieving success.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOXLXCDCapUfQoT_6IBFVFgLDKP9TO2mMfEkFRY9BaLg&s=10"
     },
     {
@@ -276,7 +238,7 @@
     },
     {
       "id": "22",
-      "name": "Classmate note book combo ",
+      "name": "Classmate Notebook Combo",
       "type": "Stationery",
       "category": "Notebooks",
       "price": 499,
@@ -458,12 +420,12 @@
       "price": 349,
       "rating": 4.9,
       "stock": 35,
-      "description": " An ancient Hindu epic that tells the story of Lord Rama, his devotion, courage, righteousness, and journey to defeat evil.\n",
+      "description": "An ancient Hindu epic that tells the story of Lord Rama, his devotion, courage, righteousness, and journey to defeat evil.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyrLX1w_tS2uwsWPLU1e3YCYEuBRlef9XZ-02eigyh-A&s=10"
     },
     {
       "id": "40",
-      "name": "Bhakthi Geethalu ",
+      "name": "Bhakthi Geethalu",
       "type": "Book",
       "category": "Spiritual & Religious",
       "price": 499,
@@ -540,7 +502,7 @@
     },
     {
       "id": "50",
-      "name": "The Cloud Castel of dreams",
+      "name": "The Cloud Castle of Dreams",
       "type": "Book",
       "category": "Children's Books",
       "price": 189,
@@ -584,13 +546,13 @@
     },
     {
       "id": "58",
-      "name": "JEE Main commbo",
+      "name": "JEE Main Combo",
       "type": "Book",
       "category": "Competitive Exam Books",
       "price": 2499,
       "rating": 4.7,
       "stock": 22,
-      "description": "A comprehensive study resource covering Physics, Chemistry, and Mathematics with important concepts, formulas, practice questions, and exam-oriented preparation to help students prepare effectively for the JEE Main examination.\n",
+      "description": "A comprehensive study resource covering Physics, Chemistry, and Mathematics with important concepts, formulas, practice questions, and exam-oriented preparation to help students prepare effectively for the JEE Main examination.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkPXscnBUbXXxDj4JAvjKNOaB1r2j0YkBDSMqhFxVzeQ&s=10"
     },
     {
@@ -601,12 +563,12 @@
       "price": 999,
       "rating": 4.8,
       "stock": 35,
-      "description": "A comprehensive study resource covering Quantitative Aptitude, Reasoning Ability, English Language, General Awareness, and Banking Awareness. It includes practice questions and exam-oriented preparation material to help candidates prepare effectively for the SBI PO examination.\n",
+      "description": "A comprehensive study resource covering Quantitative Aptitude, Reasoning Ability, English Language, General Awareness, and Banking Awareness. It includes practice questions and exam-oriented preparation material to help candidates prepare effectively for the SBI PO examination.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3KDgIjwMv3mR2Z8hBQwEvtwoEqwsAXL_UMHQD07uw3w&s"
     },
     {
       "id": "60",
-      "name": "NEET ",
+      "name": "NEET",
       "type": "Book",
       "category": "Competitive Exam Books",
       "price": 999,
@@ -704,7 +666,7 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK790n7eRb-v3xr0hQUyk4opmsKXupbU2jLY4Gft9YHw&s=10"
     },
     {
-      "name": " Introduction Computer Science",
+      "name": "Introduction to Computer Science",
       "type": "Book",
       "category": "Science & Technology",
       "price": 500,
@@ -715,7 +677,7 @@
       "id": "_DFx3cVQf0I"
     },
     {
-      "name": "Reynolds Trimax ",
+      "name": "Reynolds Trimax",
       "type": "Stationery",
       "category": "Pens",
       "price": 150,
@@ -731,7 +693,7 @@
       "category": "Pens",
       "price": 100,
       "rating": 4.2,
-      "description": "A smooth and comfortable ball pen designed for effortless everyday writing. It provides a consistent ink flow, comfortable grip, and neat writing experience, making it ideal for students, office work, and note-taking.\n",
+      "description": "A smooth and comfortable ball pen designed for effortless everyday writing. It provides a consistent ink flow, comfortable grip, and neat writing experience, making it ideal for students, office work, and note-taking.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fP7uE-I4FxdEhhzYH_68JxmVG-gIQtCnikZcYeI19Q&s=10",
       "stock": 40,
       "id": "SIgsuBBxQ3E"
@@ -748,7 +710,7 @@
       "id": "dI3KUYX_ezc"
     },
     {
-      "name": "Classmate Octane ",
+      "name": "Classmate Octane",
       "type": "Stationery",
       "category": "Pens",
       "price": 70,
@@ -759,7 +721,7 @@
       "id": "DgCo2Ry9Zuo"
     },
     {
-      "name": "DOMS Neon ",
+      "name": "DOMS Neon",
       "type": "Stationery",
       "category": "Pencils",
       "price": 100,
@@ -935,7 +897,7 @@
       "id": "z3rj8KShcDU"
     },
     {
-      "name": "Technical Drawing Set ",
+      "name": "Technical Drawing Set",
       "type": "Stationery",
       "category": "Geometry",
       "price": 999,
@@ -1078,7 +1040,7 @@
       "id": "g8"
     },
     {
-      "name": "Paper One--A4---500 papers ",
+      "name": "Paper One A4 500 Papers",
       "type": "Stationery",
       "category": "Papers",
       "price": 350,
@@ -1155,7 +1117,7 @@
       "id": "g15"
     },
     {
-      "name": "Classmate Pluse Notebook combo ",
+      "name": "Classmate Pulse Notebook Combo",
       "type": "Stationery",
       "category": "Notebooks",
       "price": 149,
@@ -1199,7 +1161,7 @@
       "id": "dAXBy3SFHnE"
     },
     {
-      "name": "Navneet Notebook ",
+      "name": "Navneet Notebook",
       "type": "Stationery",
       "category": "Notebooks",
       "price": 35,
@@ -1210,7 +1172,7 @@
       "id": "MDQAnSwtYpk"
     },
     {
-      "name": "JK Copier A4 Paper-- 500 Sheets ",
+      "name": "JK Copier A4 Paper 500 Sheets",
       "type": "Stationery",
       "category": "Papers",
       "price": 400,
@@ -1298,7 +1260,7 @@
       "id": "cNCIbeYKMJQ"
     },
     {
-      "name": "File Folder ",
+      "name": "File Folder",
       "type": "Stationery",
       "category": "School Accessories",
       "price": 75,
@@ -1510,7 +1472,12 @@
   "orders": [
     {
       "id": "1",
+      "userId": "1",
       "customerName": "Krishna Priya",
+      "phone": "9876543210",
+      "pincode": "500001",
+      "address": "Hyderabad",
+      "paymentMethod": "Online Payment",
       "items": [
         {
           "id": "1",
@@ -1525,15 +1492,20 @@
           "quantity": 2
         }
       ],
+      "subtotal": 439,
+      "deliveryCharge": 0,
       "total": 439,
       "status": "Pending",
       "date": "2026-08-30"
     },
     {
+      "id": "ESmBzT2ScwQ",
+      "userId": "IHoWSIzrcf0",
       "customerName": "Krishna Priya Chikalammetla",
       "phone": "1234567890",
       "pincode": "123456",
       "address": "xvvsedbbgd",
+      "paymentMethod": "Online Payment",
       "items": [
         {
           "id": "1",
@@ -1554,10 +1526,11 @@
           "quantity": 2
         }
       ],
+      "subtotal": 1794,
+      "deliveryCharge": 0,
       "total": 1794,
       "status": "Delivered",
-      "date": "2026-08-30T13:08:26.663Z",
-      "id": "ESmBzT2ScwQ"
+      "date": "2026-08-30T13:08:26.663Z"
     },
     {
       "customerName": "Ajay",
@@ -1568,7 +1541,7 @@
       "items": [
         {
           "id": "cNCIbeYKMJQ",
-          "name": "Office File Holder combo",
+      "name": "Office File Holder Combo",
           "price": 200,
           "quantity": 1
         },
@@ -1629,6 +1602,28 @@
       "status": "Pending",
       "date": "2026-08-31T16:08:29.341Z",
       "id": "TwKb6E6hJhE"
+    },
+    {
+      "userId": "1",
+      "customerName": "kittu",
+      "phone": "9876123450",
+      "pincode": "123456",
+      "address": "hdyuastd",
+      "paymentMethod": "Online Payment",
+      "items": [
+        {
+          "id": "3",
+          "name": "The Jungle Book",
+          "price": 220,
+          "quantity": 3
+        }
+      ],
+      "subtotal": 660,
+      "deliveryCharge": 0,
+      "total": 660,
+      "status": "Pending",
+      "date": "2026-09-01T18:40:31.329Z",
+      "id": "0Jx6__LPCgs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

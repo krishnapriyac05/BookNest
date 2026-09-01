@@ -49,24 +49,6 @@ const MyOrders = () => {
         status: "Cancelled",
       })
       .then(() => {
-        return axios
-          .get(`http://localhost:5000/users/${user.id}`)
-          .then((userResponse) => {
-            const currentOrders = Array.isArray(userResponse.data.orders)
-              ? userResponse.data.orders
-              : [];
-
-            const updatedOrders = currentOrders.map((o) =>
-              o.id === order.id ? { ...o, status: "Cancelled" } : o
-            );
-
-            return axios.patch(
-              `http://localhost:5000/users/${user.id}`,
-              { orders: updatedOrders }
-            );
-          });
-      })
-      .then(() => {
         setMessage("Order cancelled successfully.");
         loadOrders();
       })
