@@ -30,59 +30,17 @@ const AllRoutes = () => {
   return (
     <Routes>
 
-      <Route
-        path="/"
-        element={
-          <ProtectedRoute>
-            <Home />
-          </ProtectedRoute>
-        }
-      />
+      <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>}/>
 
-      <Route
-        path="/home"
-        element={
-          <ProtectedRoute>
-            <Home />
-          </ProtectedRoute>
-        }
-      />
+      <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute >} />
 
-      <Route
-        path="/books"
-        element={
-          <ProtectedRoute>
-            <Books />
-          </ProtectedRoute>
-        }
-      />
+      <Route path="/books" element={ <ProtectedRoute><Books /> </ProtectedRoute>    }/>
 
-      <Route
-        path="/stationery"
-        element={
-          <ProtectedRoute>
-            <Stationery />
-          </ProtectedRoute>
-        }
-      />
+      <Route path="/stationery" element={    <ProtectedRoute><Stationery />   </ProtectedRoute>}/>
 
-      <Route
-        path="/stationery/:category"
-        element={
-          <ProtectedRoute>
-            <Stationery />
-          </ProtectedRoute>
-        }
-      />
+      <Route  path="/stationery/:category" element={ <ProtectedRoute> <Stationery />    </ProtectedRoute> }/>
 
-      <Route
-        path="/categories"
-        element={
-          <ProtectedRoute>
-            <Categories />
-          </ProtectedRoute>
-        }
-      />
+      <Route  path="/categories" element={<ProtectedRoute>    <Categories />   </ProtectedRoute>}/>
 
       <Route
         path="/category/:category"

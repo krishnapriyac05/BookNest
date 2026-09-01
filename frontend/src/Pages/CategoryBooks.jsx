@@ -1,35 +1,24 @@
 ﻿import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import QuantityStepper from "../Components/QuantityStepper";
 import axios from "axios";
 import "../styles/books.css";
 
 const CategoryBooks = () => {
+  const navigate = useNavigate();
   const { category } = useParams();
+
+  const categoryName = category ? decodeURIComponent(category) : null;
 
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  const categoryName = category ? decodeURIComponent(category) : "";
-
-  const [prevCategory, setPrevCategory] = useState(categoryName);
-  if (categoryName !== prevCategory) {
-    setPrevCategory(categoryName);
-    setBooks([]);
-    setLoading(true);
-    setError("");
-  }
-
   useEffect(() => {
     let active = true;
 
     axios
-      .get(
-        `http://localhost:5000/products?type=Book&category=${encodeURIComponent(
-          categoryName
-        )}`
-      )
+      .get("http://localhost:5000/products?type=Book")
       .then((response) => {
         if (active) {
           setBooks(response.data);
@@ -46,7 +35,15 @@ const CategoryBooks = () => {
     return () => {
       active = false;
     };
-  }, [categoryName]);
+  }, []);
+
+  const categories = [...new Set(books.map((b) => b.category))];
+
+  const activeCategory = categoryName || "All";
+
+  const filteredBooks = categoryName
+    ? books.filter((book) => book.category === categoryName)
+    : books;
 
   if (loading) {
     return (
@@ -68,20 +65,43 @@ const CategoryBooks = () => {
   return (
     <div className="books-page">
       <div className="books-header">
-        <h1>{categoryName}</h1>
+        <h1>{categoryName || "Category"}</h1>
         <p>
-          Browse all {categoryName.toLowerCase()} books available in our store.
+          {categoryName
+            ? `Browse all ${categoryName.toLowerCase()} books available in our store.`
+            : "Browse all books available in our store."}
         </p>
       </div>
 
+      <div className="category-filters">
+        <button
+          className={`filter-chip ${activeCategory === "All" ? "active" : ""}`}
+          onClick={() => navigate("/books")}
+        >
+          All
+        </button>
+
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            className={`filter-chip ${
+              activeCategory === cat ? "active" : ""
+            }`}
+            onClick={() => navigate(`/category/${encodeURIComponent(cat)}`)}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
       <div className="books-container">
-        {books.length === 0 ? (
+        {filteredBooks.length === 0 ? (
           <div className="no-products">
             <h2>No Books Found</h2>
             <p>No books available in this category yet.</p>
           </div>
         ) : (
-          books.map((book) => (
+          filteredBooks.map((book) => (
             <div className="book-card" key={book.id}>
               <div className="book-image">
                 <img src={book.image} alt={book.name} />
