@@ -3,14 +3,14 @@ import { useDispatch } from "react-redux";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { syncCart } from "../Redux/CartSlice";
+import { useAuth } from "../Context/AuthContext";
 import "../styles/nav.css";
 
 const Nav = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const dispatch = useDispatch();
-
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const { isLoggedIn, logout } = useAuth();
 
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -20,17 +20,11 @@ const Nav = () => {
   const cacheLoaded = useRef(false);
 
   useEffect(() => {
-    const loggedInUser = localStorage.getItem("loggedInUser");
-    const loggedInAdmin = localStorage.getItem("loggedInAdmin");
-
-    setIsLoggedIn(Boolean(loggedInUser || loggedInAdmin));
     dispatch(syncCart());
-  }, [location]);
+  }, [location, isLoggedIn, dispatch]);
 
   const handleLogout = () => {
-    localStorage.removeItem("loggedInUser");
-    localStorage.removeItem("loggedInAdmin");
-    setIsLoggedIn(false);
+    logout();
     dispatch(syncCart());
     navigate("/register");
   };

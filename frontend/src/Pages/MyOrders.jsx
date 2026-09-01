@@ -1,16 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { useAuth } from "../Context/AuthContext";
 import "../styles/myorders.css";
 
 const MyOrders = () => {
-  let user = null;
-  try {
-    const storedUser = localStorage.getItem("loggedInUser");
-    user = storedUser ? JSON.parse(storedUser) : null;
-  } catch {
-    user = null;
-  }
+  const { user } = useAuth();
 
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(false);

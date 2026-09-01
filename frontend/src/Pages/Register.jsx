@@ -1,21 +1,20 @@
 ﻿import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../Context/AuthContext";
 import "../styles/register.css";
 
 const Register = () => {
   const navigate = useNavigate();
+  const { user, admin } = useAuth();
 
   useEffect(() => {
-    const loggedInUser = localStorage.getItem("loggedInUser");
-    const loggedInAdmin = localStorage.getItem("loggedInAdmin");
-
-    if (loggedInAdmin) {
+    if (admin) {
       navigate("/admin/dashboard");
-    } else if (loggedInUser) {
+    } else if (user) {
       navigate("/home");
     }
-  }, [navigate]);
+  }, [user, admin, navigate]);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -24,8 +23,39 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  const NAME_REGEX = /^[a-zA-Z\s]{3,}$/;
+  const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const PHONE_REGEX = /^[6-9][0-9]{9}$/;
+  const PASSWORD_REGEX = /^(?=.*[A-Za-z])(?=.*\d).{6,}$/;
+  const ADDRESS_REGEX = /^[a-zA-Z0-9\s,.-]{5,}$/;
+
   const handleRegister = (e) => {
     e.preventDefault();
+
+    if (!NAME_REGEX.test(name.trim())) {
+      alert("Name must be at least 3 letters (letters and spaces only).");
+      return;
+    }
+
+    if (!EMAIL_REGEX.test(email.trim())) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    if (!PHONE_REGEX.test(phone.trim())) {
+      alert("Phone number must be a valid 10-digit Indian mobile number.");
+      return;
+    }
+
+    if (!ADDRESS_REGEX.test(address.trim())) {
+      alert("Address must be at least 5 characters.");
+      return;
+    }
+
+    if (!PASSWORD_REGEX.test(password)) {
+      alert("Password must be at least 6 characters with letters and numbers.");
+      return;
+    }
 
     if (password !== confirmPassword) {
       alert("Passwords do not match");

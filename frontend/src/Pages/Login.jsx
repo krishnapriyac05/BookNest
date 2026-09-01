@@ -3,28 +3,44 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { syncCart } from "../Redux/CartSlice";
+import { useAuth } from "../Context/AuthContext";
 import "../styles/login.css";
 
 const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const { user, admin, loginAsUser, loginAsAdmin } = useAuth();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   useEffect(() => {
-    const loggedInUser = localStorage.getItem("loggedInUser");
-    const loggedInAdmin = localStorage.getItem("loggedInAdmin");
-
-    if (loggedInAdmin) {
+    if (admin) {
       navigate("/admin/dashboard");
-    } else if (loggedInUser) {
+    } else if (user) {
       navigate("/home");
     }
-  }, [navigate]);
+  }, [user, admin, navigate]);
 
   const handleLogin = (e) => {
     e.preventDefault();
+
+    const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!email.trim()) {
+      alert("Please enter your email");
+      return;
+    }
+
+    if (!EMAIL_REGEX.test(email.trim())) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
+    if (!password.trim()) {
+      alert("Please enter your password");
+      return;
+    }
 
     axios
       .all([
@@ -51,12 +67,7 @@ const Login = () => {
           if (admin) {
             console.log("Logged in admin:", admin);
 
-            // Store logged-in admin, clear any user session
-            localStorage.removeItem("loggedInUser");
-            localStorage.setItem(
-              "loggedInAdmin",
-              JSON.stringify(admin)
-            );
+            loginAsAdmin(admin);
 
             alert("Admin login successful!");
 
@@ -67,12 +78,7 @@ const Login = () => {
           } else if (user) {
             console.log("Logged in user:", user);
 
-            // Store logged-in user, clear any admin session
-            localStorage.removeItem("loggedInAdmin");
-            localStorage.setItem(
-              "loggedInUser",
-              JSON.stringify(user)
-            );
+            loginAsUser(user);
 
             alert("Login successful!");
 

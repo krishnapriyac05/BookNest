@@ -70,6 +70,19 @@ const Cart = () => {
       return;
     }
 
+    const PHONE_REGEX = /^[6-9][0-9]{9}$/;
+    const PINCODE_REGEX = /^[0-9]{6}$/;
+
+    if (!PHONE_REGEX.test(form.phone.trim())) {
+      setOrderError("Please enter a valid 10-digit mobile number.");
+      return;
+    }
+
+    if (!PINCODE_REGEX.test(form.pincode.trim())) {
+      setOrderError("Pincode must be a valid 6-digit number.");
+      return;
+    }
+
     let loggedInUser = null;
     try {
       const storedUser = localStorage.getItem("loggedInUser");

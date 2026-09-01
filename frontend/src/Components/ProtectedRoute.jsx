@@ -1,10 +1,10 @@
 import { Navigate } from "react-router-dom";
+import { useAuth } from "../Context/AuthContext";
 
 const ProtectedRoute = ({ children }) => {
-  const loggedInUser = localStorage.getItem("loggedInUser");
-  const loggedInAdmin = localStorage.getItem("loggedInAdmin");
+  const { isLoggedIn } = useAuth();
 
-  if (!loggedInUser && !loggedInAdmin) {
+  if (!isLoggedIn) {
     return <Navigate to="/register" replace />;
   }
 

@@ -1,12 +1,14 @@
 import React from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
+import { useAuth } from "../Context/AuthContext";
 import "../styles/admindashboard.css";
 
 const AdminLayout = () => {
   const navigate = useNavigate();
+  const { logout } = useAuth();
 
   const handleLogout = () => {
-    localStorage.removeItem("loggedInAdmin");
+    logout();
     navigate("/login");
   };
 

@@ -1,11 +1,13 @@
 ﻿import { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../Context/AuthContext";
 import "../styles/adminlogin.css";
 
 const AdminRegister = () => {
 
   const navigate = useNavigate();
+  const { admin } = useAuth();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -14,8 +16,32 @@ const AdminRegister = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const NAME_REGEX = /^[a-zA-Z\s]{3,}$/;
+  const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const PASSWORD_REGEX = /^(?=.*[A-Za-z])(?=.*\d).{6,}$/;
+
   const handleRegister = (e) => {
     e.preventDefault();
+
+    if (admin) {
+      setError("You are already logged in as an admin.");
+      return;
+    }
+
+    if (!NAME_REGEX.test(name.trim())) {
+      setError("Name must be at least 3 letters (letters and spaces only).");
+      return;
+    }
+
+    if (!EMAIL_REGEX.test(email.trim())) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    if (!PASSWORD_REGEX.test(password)) {
+      setError("Password must be at least 6 characters with letters and numbers.");
+      return;
+    }
 
     if (password !== confirmPassword) {
       setError("Passwords do not match");
