@@ -1,6 +1,6 @@
 ﻿import React, { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { syncCart } from "../Redux/CartSlice";
 import { useAuth } from "../Context/AuthContext";
@@ -8,10 +8,10 @@ import "../styles/nav.css";
 
 const Nav = () => {
   const navigate = useNavigate();
-  const location = useLocation();
   const dispatch = useDispatch();
   const { isLoggedIn, logout } = useAuth();
 
+  const [pathname, setPathname] = useState(window.location.pathname);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
@@ -20,8 +20,35 @@ const Nav = () => {
   const cacheLoaded = useRef(false);
 
   useEffect(() => {
+    const handleLocationChange = () => {
+      setPathname(window.location.pathname);
+    };
+
+    const originalPush = history.pushState;
+    const originalReplace = history.replaceState;
+
+    history.pushState = function (...args) {
+      originalPush.apply(this, args);
+      handleLocationChange();
+    };
+
+    history.replaceState = function (...args) {
+      originalReplace.apply(this, args);
+      handleLocationChange();
+    };
+
+    window.addEventListener("popstate", handleLocationChange);
+
+    return () => {
+      history.pushState = originalPush;
+      history.replaceState = originalReplace;
+      window.removeEventListener("popstate", handleLocationChange);
+    };
+  }, []);
+
+  useEffect(() => {
     dispatch(syncCart());
-  }, [location, isLoggedIn, dispatch]);
+  }, [pathname, isLoggedIn, dispatch]);
 
   const handleLogout = () => {
     logout();
