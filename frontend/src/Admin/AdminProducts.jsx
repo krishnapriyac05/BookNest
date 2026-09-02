@@ -1,6 +1,7 @@
 ﻿import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import API_BASE from "../config/api";
 import "../styles/adminproducts.css";
 
 const AdminProducts = () => {
@@ -10,7 +11,7 @@ const AdminProducts = () => {
   // Get products from JSON Server
   const getProducts = () => {
     axios
-      .get("http://localhost:5000/products")
+      .get(`${API_BASE}/products`)
       .then((response) => {
         setProducts(response.data);
       })
@@ -34,7 +35,7 @@ const AdminProducts = () => {
     }
 
     axios
-      .delete(`http://localhost:5000/products/${id}`)
+      .delete(`${API_BASE}/products/${id}`)
       .then(() => {
         alert("Product deleted successfully!");
         getProducts();

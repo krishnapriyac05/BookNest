@@ -2,6 +2,7 @@
 import { useSearchParams } from "react-router-dom";
 import QuantityStepper from "../Components/QuantityStepper";
 import axios from "axios";
+import API_BASE from "../config/api";
 import "../styles/books.css";
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products")
+      .get(`${API_BASE}/products`)
       .then((response) => {
         setProducts(response.data);
         setLoading(false);

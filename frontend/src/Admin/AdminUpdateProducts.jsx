@@ -1,6 +1,7 @@
 ﻿import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
+import API_BASE from "../config/api";
 import "../styles/adminupdateproducts.css";
 
 const AdminUpdateProducts = () => {
@@ -20,7 +21,7 @@ const AdminUpdateProducts = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/products/${id}`)
+      .get(`${API_BASE}/products/${id}`)
       .then((response) => {
         setProduct(response.data);
       })
@@ -42,7 +43,7 @@ const AdminUpdateProducts = () => {
     e.preventDefault();
 
     axios
-      .put(`http://localhost:5000/products/${id}`, {
+      .put(`${API_BASE}/products/${id}`, {
         ...product,
         price: Number(product.price),
         rating: Number(product.rating),

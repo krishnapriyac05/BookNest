@@ -8,6 +8,7 @@ import {
 } from "../Redux/CartSlice";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import API_BASE from "../config/api";
 import "../styles/cart.css";
 
 const Cart = () => {
@@ -115,7 +116,7 @@ const Cart = () => {
     setOrderError("");
 
     axios
-      .post("http://localhost:5000/orders", orderData)
+      .post(`${API_BASE}/orders`, orderData)
       .then(() => {
         dispatch(clearCart());
         setPlacingOrder(false);

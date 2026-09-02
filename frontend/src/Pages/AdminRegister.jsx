@@ -2,6 +2,7 @@
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/AuthContext";
+import API_BASE from "../config/api";
 import "../styles/adminlogin.css";
 
 const AdminRegister = () => {
@@ -52,7 +53,7 @@ const AdminRegister = () => {
     setError("");
 
     axios
-      .get("http://localhost:5000/admin")
+      .get(`${API_BASE}/admin`)
       .then((response) => {
         const admins = response.data;
 
@@ -71,7 +72,7 @@ const AdminRegister = () => {
           role: "admin"
         };
 
-        return axios.post("http://localhost:5000/admin", adminData);
+        return axios.post(`${API_BASE}/admin`, adminData);
       })
       .then(() => {
         alert("Admin registration successful!");

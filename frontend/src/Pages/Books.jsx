@@ -2,6 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import QuantityStepper from "../Components/QuantityStepper";
 import axios from "axios";
+import API_BASE from "../config/api";
 import "../styles/books.css";
 
 const Books = () => {
@@ -15,7 +16,7 @@ const Books = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products?type=Book")
+      .get(`${API_BASE}/products?type=Book`)
       .then((response) => {
         const data = response.data;
         setBooks(data);

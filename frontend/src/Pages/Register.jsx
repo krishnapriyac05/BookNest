@@ -2,6 +2,7 @@
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../Context/AuthContext";
+import API_BASE from "../config/api";
 import "../styles/register.css";
 
 const Register = () => {
@@ -63,7 +64,7 @@ const Register = () => {
     }
 
     axios
-      .get("http://localhost:5000/users")
+      .get(`${API_BASE}/users`)
       .then((response) => {
         const users = response.data;
 
@@ -86,7 +87,7 @@ const Register = () => {
         };
 
         return axios.post(
-          "http://localhost:5000/users",
+          `${API_BASE}/users`,
           newUser
         );
       })

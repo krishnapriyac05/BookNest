@@ -1,5 +1,6 @@
 ﻿import { useEffect, useState } from "react";
 import axios from "axios";
+import API_BASE from "../config/api";
 import "../styles/adminlist.css";
 
 const AdminOrders = () => {
@@ -7,7 +8,7 @@ const AdminOrders = () => {
 
   const getOrders = () => {
     axios
-      .get("http://localhost:5000/orders")
+      .get(`${API_BASE}/orders`)
       .then((res) => setOrders(res.data))
       .catch((err) => console.log(err));
   };
@@ -18,7 +19,7 @@ const AdminOrders = () => {
 
   const updateStatus = (order, status) => {
     axios
-      .patch(`http://localhost:5000/orders/${order.id}`, { status })
+      .patch(`${API_BASE}/orders/${order.id}`, { status })
       .then(() => {
         alert("Order status updated!");
         getOrders();
@@ -30,7 +31,7 @@ const AdminOrders = () => {
     if (!window.confirm("Delete this order?")) return;
 
     axios
-      .delete(`http://localhost:5000/orders/${id}`)
+      .delete(`${API_BASE}/orders/${id}`)
       .then(() => {
         alert("Order deleted!");
         getOrders();

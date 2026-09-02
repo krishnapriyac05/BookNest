@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { syncCart } from "../Redux/CartSlice";
 import { useAuth } from "../Context/AuthContext";
+import API_BASE from "../config/api";
 import "../styles/login.css";
 
 const Login = () => {
@@ -44,8 +45,8 @@ const Login = () => {
 
     axios
       .all([
-        axios.get("http://localhost:5000/users"),
-        axios.get("http://localhost:5000/admin"),
+        axios.get(`${API_BASE}/users`),
+        axios.get(`${API_BASE}/admin`),
       ])
       .then(
         axios.spread((usersResponse, adminsResponse) => {

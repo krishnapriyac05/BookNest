@@ -1,6 +1,7 @@
 ﻿import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import API_BASE from "../config/api";
 import "../styles/admindashboard.css";
 
 const AdminDashBoard = () => {
@@ -13,21 +14,21 @@ const AdminDashBoard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products")
+      .get(`${API_BASE}/products`)
       .then((res) =>
         setCounts((c) => ({ ...c, products: res.data.length }))
       )
       .catch(() => {});
 
     axios
-      .get("http://localhost:5000/orders")
+      .get(`${API_BASE}/orders`)
       .then((res) =>
         setCounts((c) => ({ ...c, orders: res.data.length }))
       )
       .catch(() => {});
 
     axios
-      .get("http://localhost:5000/users")
+      .get(`${API_BASE}/users`)
       .then((res) =>
         setCounts((c) => ({ ...c, users: res.data.length }))
       )

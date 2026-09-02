@@ -2,6 +2,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import QuantityStepper from "../Components/QuantityStepper";
 import axios from "axios";
+import API_BASE from "../config/api";
 import "../styles/stationery.css";
 import "../styles/books.css";
 
@@ -17,7 +18,7 @@ const Stationery = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products?type=Stationery")
+      .get(`${API_BASE}/products?type=Stationery`)
       .then((response) => {
         console.log("Stationery Products:", response.data);
 

@@ -1,5 +1,6 @@
 ﻿import { useEffect, useState } from "react";
 import axios from "axios";
+import API_BASE from "../config/api";
 import "../styles/adminlist.css";
 
 const CategoryBlock = ({ title, categories, products, type }) => (
@@ -50,7 +51,7 @@ const CategoryBlock = ({ title, categories, products, type }) => (
                       Promise.all(
                         toDelete.map((p) =>
                           axios.delete(
-                            `http://localhost:5000/products/${p.id}`
+                            `${API_BASE}/products/${p.id}`
                           )
                         )
                       )
@@ -78,7 +79,7 @@ const AdminCategories = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products")
+      .get(`${API_BASE}/products`)
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   }, []);

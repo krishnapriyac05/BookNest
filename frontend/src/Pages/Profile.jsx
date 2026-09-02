@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useAuth } from "../Context/AuthContext";
+import API_BASE from "../config/api";
 import "../styles/profile.css";
 
 const Profile = () => {
@@ -15,7 +16,7 @@ const Profile = () => {
 
     setLoadingOrders(true);
     axios
-      .get(`http://localhost:5000/orders?userId=${user.id}`)
+      .get(`${API_BASE}/orders?userId=${user.id}`)
       .then((response) => {
         setOrders(response.data);
       })

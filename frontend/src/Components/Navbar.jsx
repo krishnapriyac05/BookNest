@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { syncCart } from "../Redux/CartSlice";
 import { useAuth } from "../Context/AuthContext";
+import API_BASE from "../config/api";
 import "../styles/nav.css";
 
 const Nav = () => {
@@ -62,7 +63,7 @@ const Nav = () => {
     }
 
     return axios
-      .get("http://localhost:5000/products")
+      .get(`${API_BASE}/products`)
       .then((response) => {
         productsCache.current = response.data;
         cacheLoaded.current = true;

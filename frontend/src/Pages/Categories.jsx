@@ -1,6 +1,7 @@
 ﻿import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import API_BASE from "../config/api";
 import "../styles/books.css";
 
 const getCategoryLink = (category, type) =>
@@ -79,12 +80,12 @@ const Categories = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products?type=Book")
+      .get(`${API_BASE}/products?type=Book`)
       .then((res) => setBooks(res.data))
       .catch(() => {});
 
     axios
-      .get("http://localhost:5000/products?type=Stationery")
+      .get(`${API_BASE}/products?type=Stationery`)
       .then((res) => setStationery(res.data))
       .catch(() => {});
   }, []);

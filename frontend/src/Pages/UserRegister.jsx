@@ -1,6 +1,7 @@
 ﻿import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import API_BASE from "../config/api";
 
 const UserRegister = () => {
 
@@ -31,7 +32,7 @@ const UserRegister = () => {
     };
 
     axios
-      .post("http://localhost:5000/users", userData)
+      .post(`${API_BASE}/users`, userData)
       .then((response) => {
 
         console.log("User Registered:", response.data);

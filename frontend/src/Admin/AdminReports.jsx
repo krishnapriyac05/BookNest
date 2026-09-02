@@ -1,5 +1,6 @@
 ﻿import { useEffect, useState } from "react";
 import axios from "axios";
+import API_BASE from "../config/api";
 import "../styles/adminlist.css";
 
 const AdminReports = () => {
@@ -9,17 +10,17 @@ const AdminReports = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products")
+      .get(`${API_BASE}/products`)
       .then((res) => setProducts(res.data))
       .catch(() => {});
 
     axios
-      .get("http://localhost:5000/users")
+      .get(`${API_BASE}/users`)
       .then((res) => setUsers(res.data))
       .catch(() => {});
 
     axios
-      .get("http://localhost:5000/orders")
+      .get(`${API_BASE}/orders`)
       .then((res) => setOrders(res.data))
       .catch(() => {});
   }, []);

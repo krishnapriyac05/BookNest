@@ -2,12 +2,13 @@
   "name": "booknest-backend",
   "version": "1.0.0",
   "private": true,
-  "description": "JSON Server backend for the BookNest online book and stationery store",
+  "description": "Express backend for the BookNest online book and stationery store",
   "scripts": {
-    "start": "json-server data/db.json --port 5000",
-    "dev": "json-server --watch data/db.json --port 5000"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "dependencies": {
-    "json-server": "^1.0.0-beta.15"
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
   }
 }

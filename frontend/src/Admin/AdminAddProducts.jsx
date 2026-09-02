@@ -1,6 +1,7 @@
 ﻿import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import API_BASE from "../config/api";
 import "../styles/adminaddproducts.css";
 
 const AdminAddProducts = () => {
@@ -32,7 +33,7 @@ const AdminAddProducts = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:5000/products", {
+      .post(`${API_BASE}/products`, {
         ...product,
         price: Number(product.price),
         rating: Number(product.rating),
