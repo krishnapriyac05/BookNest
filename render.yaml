@@ -6,3 +6,11 @@ services:
     buildCommand: npm install
     startCommand: npm start
     plan: free
+
+  - type: web
+    name: booknest-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    plan: free
