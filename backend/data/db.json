@@ -37,6 +37,24 @@
       "password": "Ajay@05",
       "role": "user",
       "id": "nIjYuUyTvzw"
+    },
+    {
+      "name": "Krishna",
+      "email": "krishna1@gnail.com",
+      "phone": "9876123450",
+      "address": "hyderabad",
+      "password": "krishna@18",
+      "role": "user",
+      "id": "f8ffnPE7SKs"
+    },
+    {
+      "name": "Ajay ",
+      "email": "ajay1@gmail.com",
+      "phone": "9876123455",
+      "address": "hgdysrdsbd",
+      "password": "ajay@18",
+      "role": "user",
+      "id": "yV70byfLwd4"
     }
   ],
   "admin": [
@@ -1467,6 +1485,17 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlh5YOnFBQlPrpM-dMm82hO-ELLL19P1fKCZDDxY8YtA&s=10",
       "stock": 33,
       "id": "znel2rz78ws"
+    },
+    {
+      "name": "classmate book",
+      "type": "Stationery",
+      "category": "Notebooks",
+      "price": 50,
+      "rating": 4.2,
+      "description": "A simple and useful notebook for writing notes",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYCFlHzTy0_XU5iplRVWRDJdfsZteGjJyNMtpCSjDqgw&s=10",
+      "stock": 45,
+      "id": "viwqJTO34Lk"
     }
   ],
   "orders": [
@@ -1541,7 +1570,7 @@
       "items": [
         {
           "id": "cNCIbeYKMJQ",
-      "name": "Office File Holder Combo",
+          "name": "Office File Holder Combo",
           "price": 200,
           "quantity": 1
         },
@@ -1621,9 +1650,95 @@
       "subtotal": 660,
       "deliveryCharge": 0,
       "total": 660,
-      "status": "Pending",
+      "status": "Shipped",
       "date": "2026-09-01T18:40:31.329Z",
       "id": "0Jx6__LPCgs"
+    },
+    {
+      "userId": "f8ffnPE7SKs",
+      "customerName": "kittu",
+      "phone": "9876123450",
+      "pincode": "123456",
+      "address": "fusdfyshms",
+      "paymentMethod": "Online Payment",
+      "items": [
+        {
+          "id": "4",
+          "name": "The Selfish Giant",
+          "price": 249,
+          "quantity": 3
+        },
+        {
+          "id": "21",
+          "name": "Premium Notebook",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "id": "22",
+          "name": "Classmate Notebook Combo",
+          "price": 499,
+          "quantity": 1
+        },
+        {
+          "id": "23",
+          "name": "Glossy Translucent Blue Pen",
+          "price": 80,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 1446,
+      "deliveryCharge": 0,
+      "total": 1446,
+      "status": "Pending",
+      "date": "2026-09-01T19:53:25.494Z",
+      "id": "zCZCX0EdNDs"
+    },
+    {
+      "userId": "yV70byfLwd4",
+      "customerName": "ajay",
+      "phone": "9876123455",
+      "pincode": "123456",
+      "address": "dansbdgukyd",
+      "paymentMethod": "Cash on Delivery",
+      "items": [
+        {
+          "id": "3",
+          "name": "The Jungle Book",
+          "price": 220,
+          "quantity": 2
+        },
+        {
+          "id": "6",
+          "name": "Shiva Koti",
+          "price": 350,
+          "quantity": 2
+        },
+        {
+          "id": "30",
+          "name": "School Stationery Kit",
+          "price": 750,
+          "quantity": 2
+        },
+        {
+          "id": "DbQw7M6Tu8I",
+          "name": "Navneet Drawing Book",
+          "price": 100,
+          "quantity": 2
+        },
+        {
+          "id": "z3rj8KShcDU",
+          "name": "Premium Color Pencils",
+          "price": 199,
+          "quantity": 2
+        }
+      ],
+      "subtotal": 3238,
+      "deliveryCharge": 0,
+      "total": 3238,
+      "status": "Shipped",
+      "date": "2026-09-01T20:21:41.998Z",
+      "id": "9LXooWJu-gQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
