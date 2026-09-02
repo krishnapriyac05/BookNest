@@ -6,6 +6,9 @@ services:
     buildCommand: npm install
     startCommand: npm start
     plan: free
+    env:
+      - key: NODE_VERSION
+        value: 20
 
   - type: web
     name: booknest-frontend
@@ -14,3 +17,6 @@ services:
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     plan: free
+    env:
+      - key: NODE_VERSION
+        value: 20
