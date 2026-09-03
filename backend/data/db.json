@@ -55,6 +55,24 @@
       "password": "ajay@18",
       "role": "user",
       "id": "yV70byfLwd4"
+    },
+    {
+      "name": "kranthi",
+      "email": "kranthi@gmail.com",
+      "phone": "9876123455",
+      "address": "jhgsfukbh",
+      "password": "kranthi123",
+      "role": "user",
+      "id": "925_VXU"
+    },
+    {
+      "name": "vignesh",
+      "email": "vignesh@gmail.com",
+      "phone": "9876512345",
+      "address": "dgsjedsfhsdu",
+      "password": "vignesh18",
+      "role": "user",
+      "id": "wS2lbiN"
     }
   ],
   "admin": [
@@ -1739,6 +1757,52 @@
       "status": "Shipped",
       "date": "2026-09-01T20:21:41.998Z",
       "id": "9LXooWJu-gQ"
+    },
+    {
+      "userId": "925_VXU",
+      "customerName": "kranthi",
+      "phone": "9876123455",
+      "pincode": "123455",
+      "address": "JHGDKASUDTA",
+      "paymentMethod": "Online Payment",
+      "items": [
+        {
+          "id": "46",
+          "name": "Mathematics Practice Workbook",
+          "price": 199,
+          "quantity": 1
+        },
+        {
+          "id": "4sYMWj0w1KQ",
+          "name": "DOMS Colour Pens",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "id": "fFVnB8mPQck",
+          "name": "Camil pencil",
+          "price": 50,
+          "quantity": 1
+        },
+        {
+          "id": "pwvgHvClYwk",
+          "name": "Creative Art Drawing Book",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "o6u0O0ZH-z8",
+          "name": "DOMS Geometry Box",
+          "price": 100,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 599,
+      "deliveryCharge": 0,
+      "total": 599,
+      "status": "Pending",
+      "date": "2026-09-03T15:37:57.897Z",
+      "id": "gscGDyQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
