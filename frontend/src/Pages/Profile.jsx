@@ -14,6 +14,7 @@ const Profile = () => {
   useEffect(() => {
     if (!user || !user.id) return;
 
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setLoadingOrders(true);
     axios
       .get(`${API_BASE}/orders?userId=${user.id}`)

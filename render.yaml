@@ -20,3 +20,5 @@ services:
     env:
       - key: NODE_VERSION
         value: 20
+      - key: VITE_API_URL
+        value: https://booknest-api-hu40.onrender.com
